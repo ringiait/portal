@@ -1,0 +1,10 @@
+$(document).ready(function(){
+  $(".list-release").click(function(){
+    if(!$(this).hasClass('hide_item')){
+        $(this).addClass('hide_item');
+    }
+    else{
+        $(this).removeClass('hide_item');
+    }
+  });
+});
