@@ -1530,3 +1530,49 @@ Stack Trace:
 #2 {main}
 
 
+2015-07-15 03:46:23 Error: [PDOException] SQLSTATE[HY000]: General error: 8 attempt to write a readonly database
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/BufferedStatement.php(74): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\SqliteStatement->execute()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#6 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1515): Cake\Database\Query->execute()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1435): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#8 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1366): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1367): Cake\Database\Connection->transactional(Object(Closure))
+#11 /var/www/portal/vendor/cakephp/debug_kit/src/Routing/Filter/DebugBarFilter.php(209): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): DebugKit\Routing\Filter\DebugBarFilter->afterDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(92): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.afte...', Array)
+#16 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
+2015-07-15 03:47:37 Error: [PDOException] SQLSTATE[HY000]: General error: 8 attempt to write a readonly database
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/BufferedStatement.php(74): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/SqliteStatement.php(41): Cake\Database\Statement\BufferedStatement->execute(NULL)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Statement\SqliteStatement->execute()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#6 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1515): Cake\Database\Query->execute()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1435): Cake\ORM\Table->_insert(Object(Cake\ORM\Entity), Array)
+#8 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1366): Cake\ORM\Table->_processSave(Object(Cake\ORM\Entity), Object(ArrayObject))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(561): Cake\ORM\Table->Cake\ORM\{closure}(Object(Cake\Database\Connection))
+#10 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1367): Cake\Database\Connection->transactional(Object(Closure))
+#11 /var/www/portal/vendor/cakephp/debug_kit/src/Routing/Filter/DebugBarFilter.php(209): Cake\ORM\Table->save(Object(Cake\ORM\Entity))
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): DebugKit\Routing\Filter\DebugBarFilter->afterDispatch(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#13 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#14 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#15 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(92): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.afte...', Array)
+#16 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#17 {main}
+
+
