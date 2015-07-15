@@ -1383,3 +1383,150 @@ Stack Trace:
 #1 {main}
 
 
+2015-07-15 02:03:13 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::saveTask() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'saveTask',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-15 02:06:08 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::saveTask() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'saveTask',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-15 02:08:37 Warning: Warning (4096): Argument 2 passed to Bootstrap3\View\Helper\BootstrapFormHelper::submit() must be of the type array, string given, called in /var/www/portal/src/Template/Tasks/add.ctp on line 40 and defined in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 701]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapFormHelper::submit() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 701
+include - APP/Template/Tasks/add.ctp, line 40
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:08:37 Warning: Warning (4096): Argument 1 passed to Bootstrap3\View\Helper\BootstrapFormHelper::_createButtonOptions() must be of the type array, string given, called in /var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php on line 702 and defined in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 604]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapFormHelper::_createButtonOptions() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 604
+Bootstrap3\View\Helper\BootstrapFormHelper::submit() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 702
+include - APP/Template/Tasks/add.ctp, line 40
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:08:37 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [/var/www/portal/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php, line 1330]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\View\Helper\FormHelper::_extractOption() - CORE/src/View/Helper/FormHelper.php, line 1330
+Bootstrap3\View\Helper\BootstrapFormHelper::_addButtonClasses() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 191
+Bootstrap3\View\Helper\BootstrapFormHelper::_createButtonOptions() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 605
+Bootstrap3\View\Helper\BootstrapFormHelper::submit() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 702
+include - APP/Template/Tasks/add.ctp, line 40
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:08:37 Warning: Warning (2): array_key_exists() expects parameter 2 to be array, string given in [/var/www/portal/vendor/cakephp/cakephp/src/View/Helper/FormHelper.php, line 1330]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+array_key_exists - [internal], line ??
+Cake\View\Helper\FormHelper::_extractOption() - CORE/src/View/Helper/FormHelper.php, line 1330
+Bootstrap3\View\Helper\BootstrapFormHelper::_addButtonClasses() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 192
+Bootstrap3\View\Helper\BootstrapFormHelper::_createButtonOptions() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 605
+Bootstrap3\View\Helper\BootstrapFormHelper::submit() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 702
+include - APP/Template/Tasks/add.ctp, line 40
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:08:37 Error: Fatal Error (1): Cannot unset string offsets in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 193]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 02:08:37 Error: [Cake\Error\FatalErrorException] Cannot unset string offsets
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Cannot unset st...', '/var/www/portal...', 193)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 02:17:01 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/portal/src/Template/Tasks/add.ctp, line 38]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 02:17:01 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 38)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 02:17:59 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/portal/src/Template/Tasks/add.ctp, line 37]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 02:17:59 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 37)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+

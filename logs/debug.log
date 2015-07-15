@@ -349,3 +349,195 @@ Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
 
 
 
+2015-07-15 02:00:13 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:00:13 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:00:13 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:03:01 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:03:01 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:03:01 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:03 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:03 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:03 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:11 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 306
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:11 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 310
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-15 02:06:11 Notice: Notice (8): Undefined offset: 0 in [/var/www/portal/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Bootstrap3\View\Helper\BootstrapHtmlHelper::dropdown() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapHtmlHelper.php, line 314
+Bootstrap3\View\Helper\BootstrapFormHelper::dropdownButton() - ROOT/plugins/Bootstrap3/src/View/Helper/BootstrapFormHelper.php, line 685
+include - APP/Template/Tasks/add.ctp, line 34
+Cake\View\View::_evaluate() - CORE/src/View/View.php, line 833
+Cake\View\View::_render() - CORE/src/View/View.php, line 793
+Cake\View\View::render() - CORE/src/View/View.php, line 464
+Cake\Controller\Controller::render() - CORE/src/Controller/Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE/src/Routing/Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
+[main] - ROOT/webroot/index.php, line 37
+
+
+
