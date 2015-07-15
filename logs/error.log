@@ -1,0 +1,1385 @@
+2015-07-14 03:42:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/%20&&%20$this-%3Enumber_file_max
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 03:50:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/%20&&%20$this-%3Enumber_file_max
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 03:50:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/%20&&%20$this-%3Enumber_file_max
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 04:06:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /task/add
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 04:07:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /task/add
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 04:07:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Task could not be found.
+Exception Attributes: array (
+  'class' => 'Task',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /task/add
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 05:50:55 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/portal/src/Controller/TasksController.php, line 41]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:50:56 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 41)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:50:57 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/var/www/portal/src/Controller/TasksController.php, line 41]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:50:57 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 41)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:51:05 Error: Fatal Error (1): Class 'AppConst' not found in [/var/www/portal/src/Template/Tasks/add.ctp, line 102]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:51:05 Error: [Cake\Error\FatalErrorException] Class 'AppConst' not found
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppConst...', '/var/www/portal...', 102)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:51:06 Error: Fatal Error (1): Class 'AppConst' not found in [/var/www/portal/src/Template/Tasks/add.ctp, line 102]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:51:06 Error: [Cake\Error\FatalErrorException] Class 'AppConst' not found
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppConst...', '/var/www/portal...', 102)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:51:07 Error: Fatal Error (1): Class 'AppConst' not found in [/var/www/portal/src/Template/Tasks/add.ctp, line 102]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:51:07 Error: [Cake\Error\FatalErrorException] Class 'AppConst' not found
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppConst...', '/var/www/portal...', 102)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:51:09 Error: Fatal Error (1): Class 'AppConst' not found in [/var/www/portal/src/Template/Tasks/add.ctp, line 102]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:51:09 Error: [Cake\Error\FatalErrorException] Class 'AppConst' not found
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'AppConst...', '/var/www/portal...', 102)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:27 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:27 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:29 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:29 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:30 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:30 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:30 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:30 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:31 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:31 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:31 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:31 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 05:57:31 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 05:57:31 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 06:09:11 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 06:09:11 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 06:10:36 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 06:10:36 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 06:10:46 Error: [Cake\View\Exception\MissingLayoutException] Layout file "Layout/1.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Layout/1.ctp',
+)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(491): Cake\View\View->_getLayoutFileName(true)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(472): Cake\View\View->renderLayout('', true)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\View\View->render(NULL, NULL)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#5 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 {main}
+
+
+2015-07-14 06:11:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:11:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:11:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:12:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:12:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:12:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:12:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:13:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:13:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:13:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:14:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 06:14:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:39:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:40:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:40:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:40:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:42:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:46:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:49:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:54:54 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::assign() in [/var/www/portal/src/Controller/TasksController.php, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 08:54:54 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::assign()
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 08:56:07 Error: Fatal Error (1): Call to a member function input() on a non-object in [/var/www/portal/src/Template/Tasks/add.ctp, line 48]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 08:56:07 Error: [Cake\Error\FatalErrorException] Call to a member function input() on a non-object
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/portal...', 48)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 08:57:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:57:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:58:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 08:59:18 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/portal/src/Template/Tasks/add.ctp, line 40]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-14 08:59:19 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '<'
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 40)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-14 08:59:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:00:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:00:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:01:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:01:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:02:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:02:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:04:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:07:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:11:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:16:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:17:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:20:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:42:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:44:35 Error: [Cake\View\Exception\MissingHelperException] Helper class BootstrapHtmlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapHtmlHelper',
+  'plugin' => 'Bootstrap3',
+)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(87): Cake\View\HelperRegistry->_throwMissingClassError('BootstrapHtml', 'Bootstrap3')
+#1 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(864): Cake\Core\ObjectRegistry->load('Html', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(767): Cake\View\View->loadHelper('Html', Array)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(322): Cake\View\View->loadHelpers()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(101): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(71): Cake\Controller\Controller->createView()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\Controller\Controller->getView()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#9 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-07-14 09:47:33 Error: [Cake\View\Exception\MissingHelperException] Helper class BootstrapHtmlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapHtmlHelper',
+  'plugin' => 'Bootstrap3',
+)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(87): Cake\View\HelperRegistry->_throwMissingClassError('BootstrapHtml', 'Bootstrap3')
+#1 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(864): Cake\Core\ObjectRegistry->load('Html', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(767): Cake\View\View->loadHelper('Html', Array)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(322): Cake\View\View->loadHelpers()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(101): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(71): Cake\Controller\Controller->createView()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\Controller\Controller->getView()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#9 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-07-14 09:47:57 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:57 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:57 Error: [Cake\View\Exception\MissingHelperException] Helper class BootstrapHtmlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapHtmlHelper',
+  'plugin' => 'Bootstrap3',
+)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(87): Cake\View\HelperRegistry->_throwMissingClassError('BootstrapHtml', 'Bootstrap3')
+#1 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(864): Cake\Core\ObjectRegistry->load('Html', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(767): Cake\View\View->loadHelper('Html', Array)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(322): Cake\View\View->loadHelpers()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(101): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(71): Cake\Controller\Controller->createView()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\Controller\Controller->getView()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#9 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-07-14 09:47:57 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:57 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:59 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:59 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:59 Error: [Cake\View\Exception\MissingHelperException] Helper class BootstrapHtmlHelper could not be found.
+Exception Attributes: array (
+  'class' => 'BootstrapHtmlHelper',
+  'plugin' => 'Bootstrap3',
+)
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Core/ObjectRegistry.php(87): Cake\View\HelperRegistry->_throwMissingClassError('BootstrapHtml', 'Bootstrap3')
+#1 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(864): Cake\Core\ObjectRegistry->load('Html', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(767): Cake\View\View->loadHelper('Html', Array)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(322): Cake\View\View->loadHelpers()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(101): Cake\View\View->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), Object(Cake\Event\EventManager), Array)
+#5 /var/www/portal/vendor/cakephp/cakephp/src/View/ViewVarsTrait.php(71): Cake\Controller\Controller->createView()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\Controller\Controller->getView()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#9 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#10 {main}
+
+
+2015-07-14 09:47:59 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:47:59 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:24 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:24 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:25 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:25 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:25 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:25 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:49:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:36 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-14 09:50:37 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 00:59:32 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-15 00:59:32 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-15 00:59:32 Warning: Warning (2): include(/var/www/portal/plugins/Bootstrap3/config/bootstrap.php): failed to open stream: No such file or directory in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-15 00:59:32 Warning: Warning (2): include() [<a href='http://php.net/function.include'>function.include</a>]: Failed opening '/var/www/portal/plugins/Bootstrap3/config/bootstrap.php' for inclusion (include_path='.:/usr/share/pear:/usr/share/php') in [/var/www/portal/vendor/cakephp/cakephp/src/Core/Plugin.php, line 390]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::_includeFile() - CORE/src/Core/Plugin.php, line 390
+Cake\Core\Plugin::bootstrap() - CORE/src/Core/Plugin.php, line 316
+Cake\Core\Plugin::load() - CORE/src/Core/Plugin.php, line 176
+require - ROOT/config/bootstrap.php, line 184
+[main] - ROOT/webroot/index.php, line 27
+
+
+
+2015-07-15 01:07:41 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:07:43 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:07:45 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:11 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:18 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3')
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:19 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3')
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:20 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(182): Cake\Core\Plugin::load('Bootstrap3')
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:29 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(184): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:08:30 Error: [Cake\Core\Exception\MissingPluginException] Plugin Bootstrap3 could not be found.
+Exception Attributes: array (
+  'plugin' => 'Bootstrap3',
+)
+Stack Trace:
+#0 /var/www/portal/config/bootstrap.php(184): Cake\Core\Plugin::load('Bootstrap3', Array)
+#1 /var/www/portal/webroot/index.php(27): require('/var/www/portal...')
+#2 {main}
+
+
+2015-07-15 01:16:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 01:17:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 01:18:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 01:18:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
