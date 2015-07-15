@@ -25,32 +25,19 @@ endif;
 $this->assign('title', 'Add New Task Document');
 ?>
 
-
-<?php
-    echo $this->Html->icon('pencil');
-?>
-
-
-<?php
-    echo $this->Html->label('My Label', 'primary') ;
-    echo $this->Html->label('My Label', 'danger') ;
-    echo $this->Html->label('My Label', 'success') ;
-?>
-
-
-
 <div class="web-register">
 <?php echo $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask', 
 	'enctype' => "multipart/form-data",
-	'url' => '/tasks/saveTask/')); ?>	
+	'url' => '/tasks/saveTask/', 'horizontal' => true)); ?>	
 	<?php echo $this->Form->input('redmine_id', array('label' =>__('Redmine ID'),'id' => 'redmine_id', 'type' => 'text', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
 	<?php echo $this->Form->input('assigned', array('options'=>$arrMembers, 'label'=>__('Người được giao'),
 				  'empty'=>'Chọn thành viên','selected'=>''));  ?>
 	<?php echo $this->Form->input('title', array('label' =>__('Tiêu đề task'),'id' => 'title','type' => 'text', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
 	<?php echo $this->Form->input('task_goal', array('label' =>__('Mục đích task'),'id' => 'task_goal','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
-	<?php echo $this->Form->input('doc_file', array('label' =>__('Tài liệu đính kèm'),'id' => 'doc_file','type' => 'file', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
+	<?php echo $this->Form->file('doc_file', array('button-label' =>__('Tài liệu đính kèm'),'id' => 'doc_file', 'style' => 'width:200px;')); ?>				 
 	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'),'id' => 'test_case','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
-	<input type="submit" id="saveButton" name="saveButton" value="<?php print __(' Lưu ');  ?>" class="btn_organce" />		
+	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'),'id' => 'test_case','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
+	<?php echo $this->Form->submit(__('Lưu'), array('bootstrap-type' => 'danger', 'bootstrap-size' => 'large', 'id' => 'saveButton','name' => 'saveButton')); ?>		
 	<!-- Button -->
 <?php echo $this->Form->end(); ?>
 </div>

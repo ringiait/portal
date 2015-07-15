@@ -27,7 +27,12 @@ use Cake\View\Exception\MissingTemplateException;
  */
 class TasksController extends AppController
 {
-
+	public $helpers = [
+		'Form' => [
+			'className' => 'Bootstrap3.BootstrapForm',
+			'useCustomFileInput' => true
+		]
+	];
     /**
      * Displays a view
      *
