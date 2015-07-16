@@ -34,10 +34,12 @@ $this->assign('title', 'Add New Task Document');
 				  'empty'=>'Chọn thành viên','selected'=>''));  ?>
 	<?php echo $this->Form->input('title', array('label' =>__('Tiêu đề task'),'id' => 'title','type' => 'text', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
 	<?php echo $this->Form->input('task_goal', array('label' =>__('Mục đích task'),'id' => 'task_goal','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
-	<?php echo $this->Form->file('doc_file', array('button-label' =>__('Tài liệu đính kèm'),'id' => 'doc_file', 'style' => 'width:200px;')); ?>				 
-	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'),'id' => 'test_case','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
+	<div class="center-input">
+		<?php echo $this->Form->file('doc_file', array('button-label' =>__('Tài liệu đính kèm'),'id' => 'doc_file', 'class' => 'doc_file','style' => 'width:450px; margin: 0 auto;', 'class'=>'inputText')); ?>				 
+	</div>
 	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'),'id' => 'test_case','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
 	<?php echo $this->Form->submit(__('Lưu'), array('bootstrap-type' => 'danger', 'bootstrap-size' => 'large', 'id' => 'saveButton','name' => 'saveButton')); ?>		
+	<?php echo $this->Form->input('task_id', array('label' =>,'id' => 'task_id','type' => 'hidden', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
 	<!-- Button -->
 <?php echo $this->Form->end(); ?>
 </div>

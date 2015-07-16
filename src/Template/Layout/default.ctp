@@ -26,6 +26,7 @@
 
     <?= $this->Html->css('bootstrap.css') ?>
 	<?= $this->Html->css('bootstrap-theme.css') ?>
+	<?= $this->Html->css('style.css') ?>
 	<?= $this->Html->script('npm') ?>
 	<?= $this->Html->script('bootstrap') ?>
     <?= $this->fetch('meta') ?>
@@ -48,7 +49,7 @@
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="#about">Add Task</a></li>
+              <li><a href="/tasks/add">Add Task</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>

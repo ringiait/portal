@@ -1,3 +1,9 @@
+.center-input {
+	margin: 0px auto;
+	width: 775px;
+	padding-bottom: 15px;
+}
+
 body {
   background: url("images/bg.jpg") repeat scroll left top #fff;
   color: #333;

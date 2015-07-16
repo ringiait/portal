@@ -17,7 +17,7 @@ namespace App\Controller;
 use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
-
+use Cake\ORM\TableRegistry;
 /**
  * Static content controller
  *
@@ -34,11 +34,11 @@ class TasksController extends AppController
 		]
 	];
     /**
-     * Displays a view
-     *
-     * @return void|\Cake\Network\Response
-     * @throws \Cake\Network\Exception\NotFoundException When the view file could not
-     *   be found or \Cake\View\Exception\MissingTemplateException in debug mode.
+     * Fucntion to display form to add new task
+     * Author	: 	Hoaila
+	 * Date		: 	15/07/2015
+     * @return void
+     * 
      */
     public function add()
     {
@@ -48,4 +48,43 @@ class TasksController extends AppController
 		$this->set('title', 'Add New Task Document');
 		$this->set('arrMembers', $arrMembers);
     }
+	
+	
+    /**
+     * Function to save task to data base
+     * Author	: 	Hoaila
+	 * Date		: 	15/07/2015
+     *
+     * @return redirect back.
+     * @throws Exception Database.
+     */
+	function saveTask(){ 
+		$Tasks = TableRegistry::get('Tasks');
+		
+		$this->autoRender = false;
+		$data = $this->request['data'];
+		$taskArr = $Tasks->newEntity($this->request->data());
+		
+		//Thêm đoạn validate data vao đây. Tạm thời chưa làm
+		
+		
+		//gan giá trị neu task moi
+		if($id) {
+			$taskArr->created	= date('Y/m/d G:i:s', time());
+			$taskArr->modified = date('Y/m/d G:i:s', time());
+		}
+		
+		//tạo transacion
+		$res = $Tasks->updateAll($taskArr);
+		if ($res) {
+			$this->Flash->set('The task has been saved.', [
+				'element' => 'success'
+			]);
+		} else {
+			$this->Flash->set('The task cannot be saved.', [
+				'element' => 'error'
+			]);
+		}
+		return $this->redirect('/');
+	}
 }

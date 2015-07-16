@@ -1576,7 +1576,11 @@ Stack Trace:
 #17 {main}
 
 
+<<<<<<< HEAD
 2015-07-15 03:53:05 Error: [PDOException] SQLSTATE[HY000]: General error: 8 attempt to write a readonly database
+=======
+2015-07-15 04:03:02 Error: [PDOException] SQLSTATE[HY000]: General error: 8 attempt to write a readonly database
+>>>>>>> origin/Add_tassk_manage
 Request URL: /
 Stack Trace:
 #0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): PDOStatement->execute(NULL)
@@ -1599,3 +1603,595 @@ Stack Trace:
 #17 {main}
 
 
+<<<<<<< HEAD
+=======
+2015-07-15 04:06:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:37:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:38:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:39:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:39:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:39:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:39:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:39:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:40:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:40:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:42:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:43:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:44:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:45:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 06:48:09 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::saveTask() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'saveTask',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-15 06:49:00 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tasks/save_task.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tasks/save_task.ctp',
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(461): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#4 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-07-15 06:51:14 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tasks/save_task.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tasks/save_task.ctp',
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(461): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#4 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-07-15 06:51:38 Error: [Cake\View\Exception\MissingTemplateException] Template file "Tasks/save_task.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Tasks/save_task.ctp',
+)
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/View/View.php(461): Cake\View\View->_getViewFileName(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(582): Cake\View\View->render(NULL, NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(120): Cake\Controller\Controller->render()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#4 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 {main}
+
+
+2015-07-15 07:11:52 Error: Fatal Error (4): syntax error, unexpected '}' in [/var/www/portal/src/Controller/TasksController.php, line 91]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:11:53 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '}'
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 91)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:12:04 Error: Fatal Error (1): Class 'App\Controller\stdClass' not found in [/var/www/portal/src/Controller/TasksController.php, line 90]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:12:04 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\stdClass' not found
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/var/www/portal...', 90)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:13:43 Error: Fatal Error (1): Class 'App\Controller\ConnectionManager' not found in [/var/www/portal/src/Controller/TasksController.php, line 100]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:13:43 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\ConnectionManager' not found
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/var/www/portal...', 100)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:20:40 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::getDataSource() in [/var/www/portal/src/Controller/TasksController.php, line 105]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:20:40 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::getDataSource()
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 105)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:23:10 Error: Fatal Error (1): Call to undefined method App\Controller\TasksController::getDataSource() in [/var/www/portal/src/Controller/TasksController.php, line 89]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:23:10 Error: [Cake\Error\FatalErrorException] Call to undefined method App\Controller\TasksController::getDataSource()
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to undefin...', '/var/www/portal...', 89)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:23:41 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:24:01 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:24:41 Error: Fatal Error (1): Call to a member function saveTask() on a non-object in [/var/www/portal/src/Controller/TasksController.php, line 89]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:24:41 Error: [Cake\Error\FatalErrorException] Call to a member function saveTask() on a non-object
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/portal...', 89)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:24:54 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:28:14 Error: Fatal Error (1): Class 'App\Controller\TableRegistry' not found in [/var/www/portal/src/Controller/TasksController.php, line 62]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:28:14 Error: [Cake\Error\FatalErrorException] Class 'App\Controller\TableRegistry' not found
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\Cont...', '/var/www/portal...', 62)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:28:42 Error: Fatal Error (1): Call to a member function saveTask() on a non-object in [/var/www/portal/src/Controller/TasksController.php, line 89]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:28:42 Error: [Cake\Error\FatalErrorException] Call to a member function saveTask() on a non-object
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/portal...', 89)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:28:59 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(89): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:29:55 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(90): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(90): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:30:06 Error: [BadMethodCallException] Unknown method "saveTask"
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/src/Controller/TasksController.php(90): Cake\ORM\Table->__call('saveTask', Array)
+#1 /var/www/portal/src/Controller/TasksController.php(90): Cake\ORM\Table->saveTask(Array)
+#2 [internal function]: App\Controller\TasksController->saveTask()
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#6 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 {main}
+
+
+2015-07-15 07:35:09 Error: Fatal Error (1): Call to a member function newEntity() on a non-object in [/var/www/portal/src/Controller/TasksController.php, line 66]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 07:35:09 Error: [Cake\Error\FatalErrorException] Call to a member function newEntity() on a non-object
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/portal...', 66)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 07:35:18 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ringi_portal.tasks' doesn't exist
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'tasks', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('tasks', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('tasks')
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Marshaller.php(107): Cake\ORM\Table->schema()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1954): Cake\ORM\Marshaller->one(Array, Array)
+#5 /var/www/portal/src/Controller/TasksController.php(66): Cake\ORM\Table->newEntity(Array)
+#6 [internal function]: App\Controller\TasksController->saveTask()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#10 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-07-15 07:35:29 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ringi_portal.tasks' doesn't exist
+Request URL: /tasks/saveTask/
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'tasks', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('tasks', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('tasks')
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Marshaller.php(107): Cake\ORM\Table->schema()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1954): Cake\ORM\Marshaller->one(Array, Array)
+#5 /var/www/portal/src/Controller/TasksController.php(66): Cake\ORM\Table->newEntity(Array)
+#6 [internal function]: App\Controller\TasksController->saveTask()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(411): call_user_func_array(Array, Array)
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#10 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-07-15 08:18:27 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 08:18:29 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/portal/src/Template/Tasks/add.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-15 08:18:29 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-15 08:18:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 08:18:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-15 08:31:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 03:40:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 03:44:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+>>>>>>> origin/Add_tassk_manage
