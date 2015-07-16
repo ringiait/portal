@@ -18,174 +18,152 @@ use Cake\Datasource\ConnectionManager;
 use Cake\Error\Debugger;
 use Cake\Network\Exception\NotFoundException;
 
-$this->layout = false;
-
 if (!Configure::read('debug')):
     throw new NotFoundException();
 endif;
 
 $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <?= $this->Html->charset() ?>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        <?= $cakeDescription ?>
-    </title>
-    <?= $this->Html->meta('icon') ?>
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
-</head>
-<body class="home">
-    <header>
-        <div class="header-image">
-            <?= $this->Html->image('http://cakephp.org/img/cake-logo.png') ?>
-            <h1>Get the Ovens Ready</h1>
-        </div>
-    </header>
-    <div id="content">
-        <?php
-        if (Configure::read('debug')):
-            Debugger::checkSecurityKeys();
-        endif;
-        ?>
-        <p id="url-rewriting-warning" style="background-color:#e32; color:#fff;display:none">
-            URL rewriting is not properly configured on your server.
-            1) <a target="_blank" href="http://book.cakephp.org/3.0/en/installation/url-rewriting.html" style="color:#fff;">Help me configure it</a>
-            2) <a target="_blank" href="http://book.cakephp.org/3.0/en/development/configuration.html#general-configuration" style="color:#fff;">I don't / can't use URL rewriting</a>
-        </p>
+<body>
+<div id="wrapper">
 
-        <div class="row">
-            <div class="columns large-5 platform checks">
-                <?php if (version_compare(PHP_VERSION, '5.4.16', '>=')): ?>
-                    <p class="success">Your version of PHP is 5.4.16 or higher.</p>
-                <?php else: ?>
-                    <p class="problem">Your version of PHP is too low. You need PHP 5.4.16 or higher to use CakePHP.</p>
-                <?php endif; ?>
+	<!-- Notification Ringi -->
+	<div class="notification-ringi">
+		<!--<div class="tn-box tn-box-color-1">
+			<p>Ngày 06/03/2015 : Team hoàn thành SPECS đơn đề xuất </p>
+		</div>            
+		<div class="tn-box tn-box-color-2">
+			<p>Ngày 20/03/2015 : Team hoàn thành SPECS đơn xin dấu</p>
+		</div>  
+		<div class="tn-box tn-box-color-3">
+			<p>Ngày 03/04/2015 : Team hoàn thành SPECS đơn hiếu hỉ</p>
+		</div>
+		<div class="tn-box tn-box-color-1">
+			<p>Ngày 14/04/2015 : Giao KH Test phần sửa menu trên TEST </p>
+		</div>-->  
+		<div class="clear"></div>
+	</div>
+	
+	<!-- Team Member Ringi -->
+	<div class="team-member">
+		<div class="colum-item">
+			<h1>Lê anh Hoài</h1>              
+				<p>Chức vụ: <strong>Leader</strong></p>
+				<p>Số ĐT: <strong>0942.705.<span>750</span></strong></p>
+				<p>Email: <strong>hoaila@ai-t.vn</strong></p>
+				<p>Skype: <strong>le.anh.hoai</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Trần Thị Thúy Hằng</h1>              
+				<p>Chức vụ: <strong>Comtor</strong></p>
+				<p>Số ĐT: <strong>+818096776<span>759</span></strong></p>
+				<p>Email: <strong>hangttt@ai-t.vn</strong></p>
+				<p>Skype: <strong>tranhang1912</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Phạm Đức Tùng</h1>              
+				<p>Chức vụ: <strong>Comtor/Dev</strong></p>
+				<p>Số ĐT: <strong>0986.984.<span>262</span></strong></p>
+				<p>Email: <strong>tungpd@ai-t.vn</strong></p>
+				<p>Skype: <strong>tungpd84</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Đinh Văn Chung</h1>              
+				<p>Chức vụ: <strong>Developer</strong></p>
+				<p>Số ĐT: <strong>0166.888.<span>6999</span></strong></p>
+				<p>Email: <strong>chungdv@ai-t.vn</strong></p>
+				<p>Skype: <strong>chungdv1984</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Nguyễn Huy Văn</h1>              
+				<p>Chức vụ: <strong>Developer</strong></p>
+				<p>Số ĐT: <strong>0168.637.<span>6009</span></strong></p>
+				<p>Email: <strong>vannh@ai-t.vn</strong></p>
+				<p>Skype: <strong>huyvan_8x</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Nguyễn Thành</h1>              
+				<p>Chức vụ: <strong>Developer</strong></p>
+				<p>Số ĐT: <strong>0169.534.<span>1410</span></strong></p>
+				<p>Email: <strong>thanhn@ai-t.vn</strong></p>
+				<p>Skype: <strong>nguyenthanhictu</strong></p>
+		</div>
+		<div class="colum-item">
+			<h1>Mai Thị Hồng Hạnh</h1>              
+				<p>Chức vụ: <strong>Tester</strong></p>
+				<p>Số ĐT: <strong>0165.699.<span>1992</span></strong></p>
+				<p>Email: <strong>hanhmth@ai-t.vn</strong></p>
+				<p>Skype: <strong>maihanh-st</strong></p>
+		</div>                
+		<div class="clear"></div>
+	</div>
+	<div class="clear"></div>
+	
+	<!-- Main information of Ringi -->
+	<div class="header">
+		<div class="colum-item">
+			<h1>Ringi Portal</h1>
+			<ol>
+				<li><a rel="nofollow" target="_blank" href="https://redmine.1steam.com:8443/projects/ringi">Link to Redmine</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1fsenOFPJDF_0mjKmLZL-_pfWgjtZ0Pg1juBDJl2uoAU/edit#gid=0">Dev request upcode &amp; up code logs</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Rth9CGqUALtLOMSYZorCOpsivozC1BZREMj4cubEeMc/edit#gid=393872852">Check list release server</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Rth9CGqUALtLOMSYZorCOpsivozC1BZREMj4cubEeMc/edit#gid=1256904670">Release note server mẫu</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Rth9CGqUALtLOMSYZorCOpsivozC1BZREMj4cubEeMc/edit#gid=1026896915">Check list build IOS</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Rth9CGqUALtLOMSYZorCOpsivozC1BZREMj4cubEeMc/edit#gid=0">Check list build android</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Rth9CGqUALtLOMSYZorCOpsivozC1BZREMj4cubEeMc/edit#gid=1764784669">Release note build android &amp; IOS mẫu</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://svn.ai-t-vietnam.com/repos/ringi_repos/">SVN</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://git.1steam.com/groups/ringi">GIT</a></li>
+			</ol>
+		</div>
+		<div class="colum-item">
+			<h1>Link hệ thống</h1>
+			<ol>
+				<li><a rel="nofollow" target="_blank" href="https://eapply.adways.net/">Production Web</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://eapply-staging.adways.net/">Staging Web</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://eapply-test.adways.net/">Test Web</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://ringi-dev.ai-t.mobi:4343/">Dev Web</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://eapply-dev.adways.net/">Pma trên server thật</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://ringi-dev.ai-t.mobi:4343/pmadadver/">Pma trên server dev</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://eapply-test-sp.adways.net/appdl/ringi1.php">Link tải app test (IOS &amp; Android)</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://eapply-sp.adways.net/appdl/ringi.php">Link tải app end user (IOS &amp; Android)</a></li>
+				<li><a rel="nofollow" target="_blank" href="http://testlink.ai-t-vietnam.com:8080/login.php">Test Link</a></li>            			
+			</ol>
+		</div>
+		
+		<div class="colum-item">
+			<h1>Link Report</h1>
+			<ol>           
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/19BqYSoY1bEbj1zhLd521O0EyaS0SfuSUXosf2i387WE">Daily &amp; Weekly Schedule</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1YeppfT6AzcNwCJKx9i7WmxjBSejM3BL2qRs-qqch9J4/edit#gid=0">Plan Task Detail</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1657OBqPeYAhkr8LVrZEFVqThvHIVxvTTkp225lb8nH0">VN Diary report</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1Bink4DzhnAwOQslYaDBptyJShlee3cIO0sVw5ram6eg">JP Diary report</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1VrzaEi5TXCOFdmC59_zpR9QqFtsuZmwcXjavndxXCOk">Test report</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1g8Z6zjIo0q3Xzfor9bMEF8IonuHcrj8x9V6UDkzZHJY">Review TC của dev</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/19BqYSoY1bEbj1zhLd521O0EyaS0SfuSUXosf2i387WE/edit#gid=1139203523">Ringi Schedule</a></li>
 
-                <?php if (extension_loaded('mbstring')): ?>
-                    <p class="success">Your version of PHP has the mbstring extension loaded.</p>
-                <?php else: ?>
-                    <p class="problem">Your version of PHP does NOT have the mbstring extension loaded.</p>;
-                <?php endif; ?>
-
-                <?php if (extension_loaded('openssl')): ?>
-                    <p class="success">Your version of PHP has the openssl extension loaded.</p>
-                <?php elseif (extension_loaded('mcrypt')): ?>
-                    <p class="success">Your version of PHP has the mcrypt extension loaded.</p>
-                <?php else: ?>
-                    <p class="problem">Your version of PHP does NOT have the openssl or mcrypt extension loaded.</p>
-                <?php endif; ?>
-
-                <?php if (extension_loaded('intl')): ?>
-                    <p class="success">Your version of PHP has the intl extension loaded.</p>
-                <?php else: ?>
-                    <p class="problem">Your version of PHP does NOT have the intl extension loaded.</p>
-                <?php endif; ?>
-            </div>
-            <div class="columns large-6 filesystem checks">
-                <?php if (is_writable(TMP)): ?>
-                    <p class="success">Your tmp directory is writable.</p>
-                <?php else: ?>
-                    <p class="problem">Your tmp directory is NOT writable.</p>
-                <?php endif; ?>
-
-                <?php if (is_writable(LOGS)): ?>
-                    <p class="success">Your logs directory is writable.</p>
-                <?php else: ?>
-                    <p class="problem">Your logs directory is NOT writable.</p>
-                <?php endif; ?>
-
-                <?php $settings = Cache::config('_cake_core_'); ?>
-                <?php if (!empty($settings)): ?>
-                    <p class="success">The <em><?= $settings['className'] ?>Engine</em> is being used for core caching. To change the config edit config/app.php</p>
-                <?php else: ?>
-                    <p class="problem">Your cache is NOT working. Please check the settings in config/app.php</p>
-                <?php endif; ?>
-            </div>
-        </div>
-        <div class="row">
-            <div class="columns large-12 database checks">
-                <?php
-                    try {
-                        $connection = ConnectionManager::get('default');
-                        $connected = $connection->connect();
-                    } catch (Exception $connectionError) {
-                        $connected = false;
-                        $errorMsg = $connectionError->getMessage();
-                        if (method_exists($connectionError, 'getAttributes')):
-                            $attributes = $connectionError->getAttributes();
-                            if (isset($errorMsg['message'])):
-                                $errorMsg .= '<br />' . $attributes['message'];
-                            endif;
-                        endif;
-                    }
-                ?>
-                <?php if ($connected): ?>
-                    <p class="success">CakePHP is able to connect to the database.</p>
-                <?php else: ?>
-                    <p class="problem">CakePHP is NOT able to connect to the database.<br /><br /><?= $errorMsg ?></p>
-                <?php endif; ?>
-            </div>
-        </div>
-        <div class="row">
-            <div class="columns large-6">
-                <h3>Editing this Page</h3>
-                <ul>
-                    <li>To change the content of this page, edit: src/Template/Pages/home.ctp.</li>
-                    <li>You can also add some CSS styles for your pages at: webroot/css/.</li>
-                </ul>
-            </div>
-            <div class="columns large-6">
-                <h3>Getting Started</h3>
-                <ul>
-                    <li><a target="_blank" href="http://book.cakephp.org/3.0/en/">CakePHP 3.0 Docs</a></li>
-                    <li><a target="_blank" href="http://book.cakephp.org/3.0/en/tutorials-and-examples/bookmarks/intro.html">The 15 min Bookmarker Tutorial</a></li>
-                    <li><a target="_blank" href="http://book.cakephp.org/3.0/en/tutorials-and-examples/blog/blog.html">The 15 min Blog Tutorial</a></li>
-                </ul>
-                <p>
-            </div>
-        </div>
-
-        <hr/>
-        <div class="row">
-            <div class="columns large-12">
-                <h3 class="">More about Cake</h3>
-                <p>
-                    CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Front Controller and MVC.
-                </p>
-                <p>
-                    Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
-                </p>
-
-                <ul>
-                    <li><a href="http://cakefoundation.org/">Cake Software Foundation</a>
-                    <ul><li>Promoting development related to CakePHP</li></ul></li>
-                    <li><a href="http://www.cakephp.org">CakePHP</a>
-                    <ul><li>The Rapid Development Framework</li></ul></li>
-                    <li><a href="http://book.cakephp.org/3.0/en/">CakePHP Documentation</a>
-                    <ul><li>Your Rapid Development Cookbook</li></ul></li>
-                    <li><a href="http://api.cakephp.org/3.0/">CakePHP API</a>
-                    <ul><li>Quick Reference</li></ul></li>
-                    <li><a href="http://bakery.cakephp.org">The Bakery</a>
-                    <ul><li>Everything CakePHP</li></ul></li>
-                    <li><a href="http://plugins.cakephp.org">CakePHP plugins repo</a>
-                    <ul><li>A comprehensive list of all CakePHP plugins created by the community</li></ul></li>
-                    <li><a href="https://groups.google.com/group/cake-php">CakePHP Google Group</a>
-                    <ul><li>Community mailing list</li></ul></li>
-                    <li><a href="irc://irc.freenode.net/cakephp">irc.freenode.net #cakephp</a>
-                    <ul><li>Live chat about CakePHP</li></ul></li>
-                    <li><a href="https://github.com/cakephp/">CakePHP Code</a>
-                    <ul><li>For the Development of CakePHP Git repository, Downloads</li></ul></li>
-                    <li><a href="https://github.com/cakephp/cakephp/issues">CakePHP Issues</a>
-                    <ul><li>CakePHP issues and pull requests</li></ul></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <footer>
-    </footer>
-</body>
-</html>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1UlHIWoq3oiT-EtaLITwzY78iCZxX6Foo7WgQQCXS_x4/edit#gid=2072768977">Bug report</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1G1kwBjdZ2Lio6_AfKZCpfeWJs_v04fetcJ70aqHqojs/edit#gid=260938026">Quality report</a></li>
+			</ol>
+		</div>	
+		
+		<div class="colum-item">
+			<h1>Link Tài liệu</h1>
+			<ol>  		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/14ELJZbfGrhO37ob6yJqSUeRCBTCe38YaLzv2mAvOR70/edit#gid=0">Server setting logs</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/18mUMjvcHQtpA8urn0lLO-jR3Wfnr24R9R1wDCMQQWS4/edit#gid=580276073">Tài liệu các task của Dev</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1IjvnfPSk6CLAocq9-hlRRx1oAbe--S8f48ZZKrQkozU/edit#gid=1605078349">QA &amp; Logic Note: Đơn nhân sự(Pending)</a></li>
+				<li><a rel="nofollow" style="color:red;" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheets/d/1lPliWX7tPzI9_AXzD6bFHEZQdigA8LqhiGWNWW4ROAo/edit#gid=120747335">QA &amp; Logic Note: Đơn hiếu hỉ</a></li>    		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheet/ccc?key=0Ali3ZBWc_6WAdDJHV3hURHFPRUZfODhkQ0tLVGl5aEE&amp;usp=drive_web#gid=0">QA &amp; Logic Note: Đơn xin dấu</a></li>                    
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheet/ccc?key=0AokdSZssV1nZdG9vNmpOdlFvMlRGdXpzVjQ0RExEVWc#gid=1">QA &amp; Logic Note: Ringi cũ (HangDT)</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/spreadsheet/ccc?key=0AokdSZssV1nZdDhwbmU2TTdVRUVrRS1wbUVNR2otd2c#gid=0">Meeting note ringi cũ (HangDT)</a></li>
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/a/ai-t.vn/presentation/d/1HJnPE4DGh2t5kmE00cd67Dqhpei6g9Don1XVsjS7oI0/edit#slide=id.g2c6ac9ace_011">Server Note tổng hợp (ThanhDN)</a></li>		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1SLJWJETERh1rEhw5ilp-6R04RzWvu5zw2B_qKFnAD-M/edit#gid=297322172">Ringi KPT</a></li>		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1458ZQNhhJORTtN34B6i2fMY8kaqe2pPlsg-sWQyK6p8/edit#gid=0">Ringi Language Change Log</a></li>		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1mkb5HX7EmlZYTYC8GSv9znCf4H2_D_9S8l-Saj0cT8M/edit#gid=1678431705">Meeting Notes 2015</a></li>		
+				<li><a rel="nofollow" target="_blank" href="https://docs.google.com/spreadsheets/d/1i_qtCa5nb3TftvPSqmGSFp8AQiLumEv5d-yakIwf_ks/edit#gid=0">QA Ringi</a></li>		
+			</ol>
+		</div>
+		<div class="clearFix"></div>
+	</div>
+	
+</div>
