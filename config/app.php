@@ -217,7 +217,7 @@ return [
              */
             //'port' => 'nonstandard_port_number',
             'username' => 'root',
-            'password' => 'bia@2020',
+            'password' => '',
             'database' => 'ringi_portal',
             'encoding' => 'utf8',
             'timezone' => 'UTC',

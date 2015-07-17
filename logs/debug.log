@@ -673,3 +673,144 @@ Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 87
 
 
 
+2015-07-16 09:13:16 Notice: Notice (8): Undefined property: Cake\ORM\ResultSet::$items in [G:\xampp\htdocs\ringi_portal\src\Controller\TasksController.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TasksController::add() - APP/Controller\TasksController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-16 09:13:27 Notice: Notice (8): Undefined property: Cake\ORM\ResultSet::$items in [G:\xampp\htdocs\ringi_portal\src\Controller\TasksController.php, line 57]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+App\Controller\TasksController::add() - APP/Controller\TasksController.php, line 57
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-16 10:02:23 Notice: Notice (8): Undefined variable: arrFuncType in [G:\xampp\htdocs\ringi_portal\src\Template\Tasks\add.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tasks\add.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::render() - CORE\src\View\View.php, line 464
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-16 10:16:26 Notice: Notice (8): Undefined variable: engine in [G:\xampp\htdocs\ringi_portal\vendor\cakephp\cakephp\src\Core\Configure.php, line 200]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\Core\Configure::config() - CORE\src\Core\Configure.php, line 200
+require - ROOT\config\bootstrap.php, line 204
+[main] - ROOT\webroot\index.php, line 27
+
+
+
+2015-07-16 10:19:42 Notice: Notice (8): Undefined variable: arrFuncType in [G:\xampp\htdocs\ringi_portal\src\Template\Tasks\add.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tasks\add.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::render() - CORE\src\View\View.php, line 464
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-16 10:20:55 Notice: Notice (8): Undefined variable: arrFuncType in [G:\xampp\htdocs\ringi_portal\src\Template\Tasks\add.ctp, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tasks\add.ctp, line 46
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::render() - CORE\src\View\View.php, line 464
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-17 03:17:48 Notice: Notice (8): Undefined variable: arrDbOtimized in [G:\xampp\htdocs\ringi_portal\src\Template\Tasks\add.ctp, line 61]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Tasks\add.ctp, line 61
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::render() - CORE\src\View\View.php, line 464
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-17 04:31:15 Notice: Notice (8): Undefined variable: conditions in [G:\xampp\htdocs\ringi_portal\vendor\cakephp\cakephp\src\ORM\Table.php, line 1228]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+Cake\ORM\Table::updateAll() - CORE\src\ORM\Table.php, line 1228
+App\Controller\TasksController::saveTask() - APP/Controller\TasksController.php, line 115
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 411
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-17 05:01:20 Notice: Notice (8): Undefined index: name in [G:\xampp\htdocs\ringi_portal\src\Template\Element\Flash\success.ctp, line 2]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\success.ctp, line 2
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1160
+Cake\View\View::element() - CORE\src\View\View.php, line 375
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 61
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 510
+Cake\View\View::render() - CORE\src\View\View.php, line 472
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2015-07-17 05:01:20 Notice: Notice (8): Undefined index: email in [G:\xampp\htdocs\ringi_portal\src\Template\Element\Flash\success.ctp, line 2]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 138
+include - APP/Template\Element\Flash\success.ctp, line 2
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::_renderElement() - CORE\src\View\View.php, line 1160
+Cake\View\View::element() - CORE\src\View\View.php, line 375
+Cake\View\Helper\FlashHelper::render() - CORE\src\View\Helper\FlashHelper.php, line 83
+include - APP/Template\Layout\default.ctp, line 61
+Cake\View\View::_evaluate() - CORE\src\View\View.php, line 833
+Cake\View\View::_render() - CORE\src\View\View.php, line 793
+Cake\View\View::renderLayout() - CORE\src\View\View.php, line 510
+Cake\View\View::render() - CORE\src\View\View.php, line 472
+Cake\Controller\Controller::render() - CORE\src\Controller\Controller.php, line 582
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 120
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
