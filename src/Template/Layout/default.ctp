@@ -26,9 +26,12 @@
     <?= $this->Html->css('bootstrap.css') ?>
 	<?= $this->Html->css('bootstrap-theme.css') ?>
 	<?= $this->Html->css('style.css') ?>
+    <?= $this->Html->css('jquery-ui.min.css') ?>
 	<?= $this->Html->script('jquery.min') ?>
+    <?= $this->Html->script('jquery-ui.min') ?>
 	<?= $this->Html->script('npm') ?>
 	<?= $this->Html->script('bootstrap.min') ?>
+    <?= $this->Html->script('user') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
