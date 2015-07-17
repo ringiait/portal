@@ -47,10 +47,46 @@ $(document).ready(function(){
             success: function(data){
                 if(data.status == true){
                     alert(data.msg);
+                    window.location.reload(true);
                 }else{
                     alert(data.msg);
                 }
             }
         });
     });
+
 });
+
+function deleteUser(userId) {
+    $( "#dialog-confirm" ).dialog({
+        resizable: false,
+        height:250,
+        width:350,
+        modal: true,
+        buttons: {
+            "Delete": function() {
+                $.ajax({
+                    beforeSend: function(){
+                    },
+                    delay: 0,
+                    url: '/users/delete',
+                    type: 'POST',
+                    dataType: 'json',
+                    data : { id : userId },
+                    success: function(data){
+                        if(data.status == true){
+                            alert(data.msg);
+                            window.location.reload(true);
+                        }else{
+                            alert(data.msg);
+                        }
+                        $( this ).dialog( "close" );
+                    }
+                });
+            },
+            Cancel: function() {
+                $( this ).dialog( "close" );
+            }
+        }
+    });
+}
