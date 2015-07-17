@@ -2188,3 +2188,2525 @@ Stack Trace:
 #1 {main}
 
 
+2015-07-16 06:14:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:19:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:23:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:24:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:25:53 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'ringi_portal.menus' doesn't exist
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'menus', Array, Object(Cake\Database\Schema\Table))
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Schema/CachedCollection.php(65): Cake\Database\Schema\Collection->describe('menus', Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(426): Cake\Database\Schema\CachedCollection->describe('menus')
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(141): Cake\ORM\Table->schema()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(123): Cake\ORM\Query->addDefaultTypes(Object(Cake\ORM\Table))
+#5 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(1217): Cake\ORM\Query->__construct(Object(Cake\Database\Connection), Object(Cake\ORM\Table))
+#6 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(921): Cake\ORM\Table->query()
+#7 /var/www/portal/src/Controller/AppController.php(57): Cake\ORM\Table->find('all')
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#9 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#11 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#13 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#15 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#16 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#17 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#18 {main}
+
+
+2015-07-16 06:49:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:49:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 06:55:33 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/portal/src/Template/Tasks/add.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 06:55:34 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /tasks/add
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 06:55:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:21:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:21:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:23:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:27:17 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/portal/src/Controller/AppController.php, line 55]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 07:27:17 Error: [Cake\Error\FatalErrorException] Call to a member function find() on a non-object
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', '/var/www/portal...', 55)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 07:30:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:30:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:31:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:31:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:33:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:33:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:33:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:34:18 Warning: Warning (2): strtolower() expects parameter 1 to be string, array given in [/var/www/portal/vendor/cakephp/cakephp/src/ORM/BehaviorRegistry.php, line 203]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+strtolower - [internal], line ??
+Cake\ORM\BehaviorRegistry::hasFinder() - CORE/src/ORM/BehaviorRegistry.php, line 203
+Cake\ORM\Table::callFinder() - CORE/src/ORM/Table.php, line 1746
+Cake\ORM\Table::find() - CORE/src/ORM/Table.php, line 923
+App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 57
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 278
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 87
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 49
+Cake\Routing\DispatcherFilter::handle() - CORE/src/Routing/DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 62
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-16 07:34:18 Error: [BadMethodCallException] Unknown finder method "Array"
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Table.php(923): Cake\ORM\Table->callFinder(Array, Object(Cake\ORM\Query), Array)
+#1 /var/www/portal/src/Controller/AppController.php(57): Cake\ORM\Table->find(Array)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#3 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#11 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#12 {main}
+
+
+2015-07-16 07:34:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:34:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Menus.i_d' in 'where clause'
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/MysqlStatement.php(36): PDOStatement->execute(NULL)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Database/Statement/StatementDecorator.php(169): Cake\Database\Statement\MysqlStatement->execute(NULL)
+#2 /var/www/portal/vendor/cakephp/cakephp/src/Database/Log/LoggingStatement.php(55): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(274): Cake\Database\Log\LoggingStatement->execute()
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#7 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(234): Cake\ORM\Query->all()
+#9 /var/www/portal/src/Controller/AppController.php(58): Cake\ORM\Query->toArray()
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#11 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#13 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#14 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#15 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#16 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#17 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#18 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#19 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#20 {main}
+
+
+2015-07-16 07:34:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:35:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:35:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:41:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:41:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:41:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:41:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:52:45 Error: [Cake\View\Exception\MissingCellException] Cell class MenusCell is missing.
+Exception Attributes: array (
+  'className' => 'MenusCell',
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/src/Controller/AppController.php(58): App\Controller\AppController->cell('Menus')
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#2 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#3 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#4 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#10 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#11 {main}
+
+
+2015-07-16 07:53:07 Error: Fatal Error (1): Trait 'Cake\View\CellMenus' not found in [/var/www/portal/src/Controller/AppController.php, line 44]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 07:53:07 Error: [Cake\Error\FatalErrorException] Trait 'Cake\View\CellMenus' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Trait 'Cake\\Vie...', '/var/www/portal...', 44)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 07:53:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:53:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:53:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:53:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:54:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:54:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:55:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 07:57:06 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:04:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:05:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:10:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:20:39 Error: [InvalidArgumentException] Menus is not associated with id
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\MenusTable), 'id', Array, Array)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\MenusTable))
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\MenusTable))
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\MenusTable), true)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(120): Cake\ORM\Query->sql()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(234): Cake\ORM\Query->all()
+#13 /var/www/portal/src/View/Cell/MenuCell.php(37): Cake\ORM\Query->toArray()
+#14 [internal function]: App\View\Cell\MenuCell->display()
+#15 /var/www/portal/vendor/cakephp/cakephp/src/View/CellTrait.php(83): ReflectionMethod->invokeArgs(Object(App\View\Cell\MenuCell), Array)
+#16 /var/www/portal/src/Controller/AppController.php(57): App\Controller\AppController->cell('Menu')
+#17 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#18 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#19 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#20 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#22 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#24 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#25 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#26 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#27 {main}
+
+
+2015-07-16 08:22:26 Error: [InvalidArgumentException] Menus is not associated with id
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\MenusTable), 'id', Array, Array)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\MenusTable))
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\MenusTable))
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\MenusTable), true)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(120): Cake\ORM\Query->sql()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(234): Cake\ORM\Query->all()
+#13 /var/www/portal/src/View/Cell/MenuCell.php(36): Cake\ORM\Query->toArray()
+#14 [internal function]: App\View\Cell\MenuCell->display()
+#15 /var/www/portal/vendor/cakephp/cakephp/src/View/CellTrait.php(83): ReflectionMethod->invokeArgs(Object(App\View\Cell\MenuCell), Array)
+#16 /var/www/portal/src/Controller/AppController.php(57): App\Controller\AppController->cell('Menu')
+#17 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#18 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#19 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#20 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#22 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#24 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#25 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#26 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#27 {main}
+
+
+2015-07-16 08:22:36 Error: [InvalidArgumentException] Menus is not associated with id
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\MenusTable), 'id', Array, Array)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\MenusTable))
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\MenusTable))
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\MenusTable), true)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(120): Cake\ORM\Query->sql()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(234): Cake\ORM\Query->all()
+#13 /var/www/portal/src/View/Cell/MenuCell.php(34): Cake\ORM\Query->toArray()
+#14 [internal function]: App\View\Cell\MenuCell->display()
+#15 /var/www/portal/vendor/cakephp/cakephp/src/View/CellTrait.php(83): ReflectionMethod->invokeArgs(Object(App\View\Cell\MenuCell), Array)
+#16 /var/www/portal/src/Controller/AppController.php(57): App\Controller\AppController->cell('Menu')
+#17 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#18 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#19 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#20 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#22 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#24 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#25 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#26 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#27 {main}
+
+
+2015-07-16 08:22:38 Error: [InvalidArgumentException] Menus is not associated with id
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(233): Cake\ORM\EagerLoader->_normalizeContain(Object(App\Model\Table\MenusTable), 'id', Array, Array)
+#1 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(341): Cake\ORM\EagerLoader->normalized(Object(App\Model\Table\MenusTable))
+#2 /var/www/portal/vendor/cakephp/cakephp/src/ORM/EagerLoader.php(320): Cake\ORM\EagerLoader->attachableAssociations(Object(App\Model\Table\MenusTable))
+#3 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(682): Cake\ORM\EagerLoader->attachAssociations(Object(Cake\ORM\Query), Object(App\Model\Table\MenusTable), true)
+#4 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(638): Cake\ORM\Query->_transformQuery()
+#5 /var/www/portal/vendor/cakephp/cakephp/src/Database/Driver/Mysql.php(120): Cake\ORM\Query->sql()
+#6 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(220): Cake\Database\Driver\Mysql->prepare(Object(Cake\ORM\Query))
+#7 /var/www/portal/vendor/cakephp/cakephp/src/Database/Connection.php(272): Cake\Database\Connection->prepare(Object(Cake\ORM\Query))
+#8 /var/www/portal/vendor/cakephp/cakephp/src/Database/Query.php(175): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#9 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(657): Cake\Database\Query->execute()
+#10 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(218): Cake\ORM\Query->_execute()
+#11 /var/www/portal/vendor/cakephp/cakephp/src/ORM/Query.php(608): Cake\ORM\Query->_all()
+#12 /var/www/portal/vendor/cakephp/cakephp/src/Datasource/QueryTrait.php(234): Cake\ORM\Query->all()
+#13 /var/www/portal/src/View/Cell/MenuCell.php(34): Cake\ORM\Query->toArray()
+#14 [internal function]: App\View\Cell\MenuCell->display()
+#15 /var/www/portal/vendor/cakephp/cakephp/src/View/CellTrait.php(83): ReflectionMethod->invokeArgs(Object(App\View\Cell\MenuCell), Array)
+#16 /var/www/portal/src/Controller/AppController.php(57): App\Controller\AppController->cell('Menu')
+#17 /var/www/portal/vendor/cakephp/cakephp/src/Controller/Controller.php(278): App\Controller\AppController->initialize()
+#18 [internal function]: Cake\Controller\Controller->__construct(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#19 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(87): ReflectionClass->newInstance(Object(Cake\Network\Request), Object(Cake\Network\Response), 'Pages')
+#20 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Filter/ControllerFactoryFilter.php(49): Cake\Routing\Filter\ControllerFactoryFilter->_getController(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#21 /var/www/portal/vendor/cakephp/cakephp/src/Routing/DispatcherFilter.php(145): Cake\Routing\Filter\ControllerFactoryFilter->beforeDispatch(Object(Cake\Event\Event))
+#22 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(389): Cake\Routing\DispatcherFilter->handle(Object(Cake\Event\Event), Object(Cake\Network\Request), Object(Cake\Network\Response))
+#23 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManager.php(355): Cake\Event\EventManager->_callListener(Array, Object(Cake\Event\Event))
+#24 /var/www/portal/vendor/cakephp/cakephp/src/Event/EventManagerTrait.php(78): Cake\Event\EventManager->dispatch(Object(Cake\Event\Event))
+#25 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(62): Cake\Routing\Dispatcher->dispatchEvent('Dispatcher.befo...', Array)
+#26 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#27 {main}
+
+
+2015-07-16 08:22:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:36:35 Error: Fatal Error (4): syntax error, unexpected '{' in [/var/www/portal/src/Template/Cell/Menu/display.ctp, line 20]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 08:36:35 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '{'
+Request URL: /
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 20)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 08:36:48 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:38:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:38:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class &itemMenu=1 could not be found.
+Exception Attributes: array (
+  'class' => '&itemMenu=1',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /&item_menu=1
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:38:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class &itemMenu=1 could not be found.
+Exception Attributes: array (
+  'class' => '&itemMenu=1',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /&item_menu=1
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:38:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:39:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class &itemMenu=1 could not be found.
+Exception Attributes: array (
+  'class' => '&itemMenu=1',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /&item_menu=1
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:39:04 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:39:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:39:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class &itemMenu=1 could not be found.
+Exception Attributes: array (
+  'class' => '&itemMenu=1',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /&item_menu=1
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:39:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:40:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:40:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:40:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:44:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:44:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:45:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:45:09 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 08:45:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:45:17 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/portal/src/Template/Tasks/add.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 08:45:17 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /tasks/add?item_menu=3
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 08:45:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:50:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:51:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:52:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:53:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:53:20 Warning: Warning (2): in_array() expects parameter 2 to be array, null given in [/var/www/portal/src/View/Cell/MenuCell.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+in_array - [internal], line ??
+App\View\Cell\MenuCell::display() - APP/View/Cell/MenuCell.php, line 45
+ReflectionMethod::invokeArgs() - [internal], line ??
+App\Controller\AppController::cell() - CORE/src/View/CellTrait.php, line 83
+App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 57
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 278
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 87
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 49
+Cake\Routing\DispatcherFilter::handle() - CORE/src/Routing/DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 62
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-16 08:53:20 Warning: Warning (2): in_array() expects parameter 2 to be array, null given in [/var/www/portal/src/View/Cell/MenuCell.php, line 45]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+in_array - [internal], line ??
+App\View\Cell\MenuCell::display() - APP/View/Cell/MenuCell.php, line 45
+ReflectionMethod::invokeArgs() - [internal], line ??
+App\Controller\AppController::cell() - CORE/src/View/CellTrait.php, line 83
+App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 57
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 278
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 87
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 49
+Cake\Routing\DispatcherFilter::handle() - CORE/src/Routing/DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 62
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-16 08:53:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:54:02 Warning: Warning (2): in_array() expects parameter 2 to be array, null given in [/var/www/portal/src/View/Cell/MenuCell.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+in_array - [internal], line ??
+App\View\Cell\MenuCell::display() - APP/View/Cell/MenuCell.php, line 46
+ReflectionMethod::invokeArgs() - [internal], line ??
+App\Controller\AppController::cell() - CORE/src/View/CellTrait.php, line 83
+App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 57
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 278
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 87
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 49
+Cake\Routing\DispatcherFilter::handle() - CORE/src/Routing/DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 62
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-16 08:54:02 Warning: Warning (2): in_array() expects parameter 2 to be array, null given in [/var/www/portal/src/View/Cell/MenuCell.php, line 46]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 138
+in_array - [internal], line ??
+App\View\Cell\MenuCell::display() - APP/View/Cell/MenuCell.php, line 46
+ReflectionMethod::invokeArgs() - [internal], line ??
+App\Controller\AppController::cell() - CORE/src/View/CellTrait.php, line 83
+App\Controller\AppController::initialize() - APP/Controller/AppController.php, line 57
+Cake\Controller\Controller::__construct() - CORE/src/Controller/Controller.php, line 278
+ReflectionClass::newInstance() - [internal], line ??
+Cake\Routing\Filter\ControllerFactoryFilter::_getController() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 87
+Cake\Routing\Filter\ControllerFactoryFilter::beforeDispatch() - CORE/src/Routing/Filter/ControllerFactoryFilter.php, line 49
+Cake\Routing\DispatcherFilter::handle() - CORE/src/Routing/DispatcherFilter.php, line 145
+Cake\Event\EventManager::_callListener() - CORE/src/Event/EventManager.php, line 389
+Cake\Event\EventManager::dispatch() - CORE/src/Event/EventManager.php, line 355
+Cake\Routing\Dispatcher::dispatchEvent() - CORE/src/Event/EventManagerTrait.php, line 78
+Cake\Routing\Dispatcher::dispatch() - CORE/src/Routing/Dispatcher.php, line 62
+[main] - ROOT/webroot/index.php, line 37
+
+
+
+2015-07-16 08:54:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:54:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:54:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:54:56 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 08:55:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:56:40 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in [/var/www/portal/src/Template/Cell/Menu/display.ctp, line 32]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 08:56:40 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';'
+Request URL: /?item_menu=1
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 32)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 08:56:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:57:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:57:10 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 08:57:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:58:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 08:58:18 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:00:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:00:53 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 09:00:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:03:10 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:03:11 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 09:03:15 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:04:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:04:28 Error: [Cake\Controller\Exception\MissingActionException] Action TasksController::list() could not be found, or is not accessible.
+Exception Attributes: array (
+  'controller' => 'TasksController',
+  'action' => 'list',
+  'prefix' => '',
+  'plugin' => NULL,
+)
+Request URL: /tasks/list?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(114): Cake\Controller\Controller->invokeAction()
+#1 /var/www/portal/vendor/cakephp/cakephp/src/Routing/Dispatcher.php(87): Cake\Routing\Dispatcher->_invoke(Object(App\Controller\TasksController))
+#2 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#3 {main}
+
+
+2015-07-16 09:05:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:05:56 Error: Fatal Error (4): syntax error, unexpected ',' in [/var/www/portal/src/Template/Tasks/add.ctp, line 42]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 09:05:57 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ','
+Request URL: /tasks/add?item_menu=2
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', '/var/www/portal...', 42)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 09:06:46 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:06:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:06:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:06:59 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:09:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:09:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:09:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:16:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:23:52 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:26:04 Error: Fatal Error (1): Class 'App\View\Cell\Configure' not found in [/var/www/portal/src/View/Cell/MenuCell.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 09:26:04 Error: [Cake\Error\FatalErrorException] Class 'App\View\Cell\Configure' not found
+Request URL: /?item_menu=1
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\View...', '/var/www/portal...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 09:26:18 Error: Fatal Error (1): Class 'App\View\Cell\Configure' not found in [/var/www/portal/src/View/Cell/MenuCell.php, line 29]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE/src/Error/BaseErrorHandler.php, line 191
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE/src/Error/BaseErrorHandler.php, line 90
+[main] - [internal], line ??
+
+
+
+2015-07-16 09:26:18 Error: [Cake\Error\FatalErrorException] Class 'App\View\Cell\Configure' not found
+Request URL: /?item_menu=1
+Stack Trace:
+#0 /var/www/portal/vendor/cakephp/cakephp/src/Error/BaseErrorHandler.php(90): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Class 'App\\View...', '/var/www/portal...', 29)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2015-07-16 09:27:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:27:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:27:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-16 09:28:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:46:09 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:46:21 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:46:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:57:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:57:49 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:57:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:23 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:25 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:58:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:59:16 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 00:59:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 01:51:39 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 01:51:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 01:58:07 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 01:59:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:03:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:03:47 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:04:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:04:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:06:38 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:06:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:06:45 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:07:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:07:02 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:07:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:07:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:08:01 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:09:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:10:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:10:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:10:31 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:10:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:10:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:11:13 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:11:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:11:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:03 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:28 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:55 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:12:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:13:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:13:33 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:14:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:14:58 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:15:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:15:24 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:16:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:16:30 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:16:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:18:35 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:18:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:25:19 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:26:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:26:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2015-07-17 02:27:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Exception Attributes: array (
+  'class' => 'Css',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /css/images/bg.jpg
+Stack Trace:
+#0 /var/www/portal/webroot/index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
