@@ -43,62 +43,33 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		</div>-->  
 		<div class="clear"></div>
 	</div>
-	
 	<!-- Team Member Ringi -->
+    <fieldset class="fsStyle">
+        <legend class="legendStyle"><?= __('Member of team') ?></legend>
 	<div class="team-member">
-		<div class="colum-item">
-			<h1>Lê anh Hoài</h1>              
-				<p>Chức vụ: <strong>Leader</strong></p>
-				<p>Số ĐT: <strong>0942.705.<span>750</span></strong></p>
-				<p>Email: <strong>hoaila@ai-t.vn</strong></p>
-				<p>Skype: <strong>le.anh.hoai</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Trần Thị Thúy Hằng</h1>              
-				<p>Chức vụ: <strong>Comtor</strong></p>
-				<p>Số ĐT: <strong>+818096776<span>759</span></strong></p>
-				<p>Email: <strong>hangttt@ai-t.vn</strong></p>
-				<p>Skype: <strong>tranhang1912</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Phạm Đức Tùng</h1>              
-				<p>Chức vụ: <strong>Comtor/Dev</strong></p>
-				<p>Số ĐT: <strong>0986.984.<span>262</span></strong></p>
-				<p>Email: <strong>tungpd@ai-t.vn</strong></p>
-				<p>Skype: <strong>tungpd84</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Đinh Văn Chung</h1>              
-				<p>Chức vụ: <strong>Developer</strong></p>
-				<p>Số ĐT: <strong>0166.888.<span>6999</span></strong></p>
-				<p>Email: <strong>chungdv@ai-t.vn</strong></p>
-				<p>Skype: <strong>chungdv1984</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Nguyễn Huy Văn</h1>              
-				<p>Chức vụ: <strong>Developer</strong></p>
-				<p>Số ĐT: <strong>0168.637.<span>6009</span></strong></p>
-				<p>Email: <strong>vannh@ai-t.vn</strong></p>
-				<p>Skype: <strong>huyvan_8x</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Nguyễn Thành</h1>              
-				<p>Chức vụ: <strong>Developer</strong></p>
-				<p>Số ĐT: <strong>0169.534.<span>1410</span></strong></p>
-				<p>Email: <strong>thanhn@ai-t.vn</strong></p>
-				<p>Skype: <strong>nguyenthanhictu</strong></p>
-		</div>
-		<div class="colum-item">
-			<h1>Mai Thị Hồng Hạnh</h1>              
-				<p>Chức vụ: <strong>Tester</strong></p>
-				<p>Số ĐT: <strong>0165.699.<span>1992</span></strong></p>
-				<p>Email: <strong>hanhmth@ai-t.vn</strong></p>
-				<p>Skype: <strong>maihanh-st</strong></p>
-		</div>                
+        <?php if(is_array($users) && count($users) > 0): ?>
+            <?php foreach($users as $key => $dataUser): ?>
+                <div class="colum-item">
+                    <h1 id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
+                    <p><?= __('Chức vụ') . ': <strong id="office' . $dataUser->id . '">' . $dataUser->office_id . '</strong>' ?></p>
+                    <p><?= __('Số ĐT') . ': <strong id="phone' . $dataUser->id . '">' . $dataUser->phone . '</strong>' ?></p>
+                    <p><?= __('Email') . ': <strong id="email' . $dataUser->id . '">' .$dataUser->email . '</strong>' ?></p>
+                    <p><?= __('Skype') . ': <strong id="skype' . $dataUser->id . '">' . $dataUser->skype . '</strong>' ?></p>
+                    <?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
+                    <?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
+                    <?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>edit</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="delete">delete</button>
+                </div>
+            <?php endforeach ?>
+        <?php else: ?>
+            <?= __('Have no user, please add') ?>
+        <?php endif ?>
 		<div class="clear"></div>
 	</div>
+    </fieldset>
 	<div class="clear"></div>
-	
+    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="add">add</button>
 	<!-- Main information of Ringi -->
 	<div class="header">
 		<div class="colum-item">
@@ -167,3 +138,5 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</div>
 	
 </div>
+
+<?= $this->element('add_user'); ?>

@@ -51,7 +51,11 @@ class PagesController extends AppController
         if (!empty($path[1])) {
             $subpage = $path[1];
         }
-        $this->set(compact('page', 'subpage'));
+
+        $this->loadModel('Users');
+        $users = $this->Users->find()->toArray();
+
+        $this->set(compact('page', 'subpage', 'users'));
 
         try {
             $this->render(implode('/', $path));
