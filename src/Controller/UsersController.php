@@ -49,8 +49,20 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 $arrReturn = array("status" => true, "msg" => __("The user has been saved"));
             } else {
-                $arrReturn = array("status" => false, "msg" => __("Can't not save"));
+                $arrReturn = array("status" => false, "msg" => __("The user could not be saved. Please, try again."));
             }
+        }
+        echo json_encode($arrReturn); die;
+    }
+
+    public function delete()
+    {
+        $id = $this->request->data['id'];
+        $user = $this->Users->get($id);
+        if ($this->Users->delete($user)) {
+            $arrReturn = array("status" => true, "msg" => __("The user has been deleted"));
+        } else {
+            $arrReturn = array("status" => false, "msg" => __("The user could not be deleted. Please, try again."));
         }
         echo json_encode($arrReturn); die;
     }

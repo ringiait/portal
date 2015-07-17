@@ -26,7 +26,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 ?>
 <body>
 <div id="wrapper">
-
 	<!-- Notification Ringi -->
 	<div class="notification-ringi">
 		<!--<div class="tn-box tn-box-color-1">
@@ -45,7 +44,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</div>
 	<!-- Team Member Ringi -->
     <fieldset class="fsStyle">
-        <legend class="legendStyle"><?= __('Member of team') ?></legend>
+        <legend class="legendStyle">
+            <?= __('Member of team') ?>
+            <a href="#" data-toggle="modal" data-target="#memberModal" data-title="add">
+                <span class="glyphicon glyphicon-plus"></span>
+            </a>
+        </legend>
 	<div class="team-member">
         <?php if(is_array($users) && count($users) > 0): ?>
             <?php foreach($users as $key => $dataUser): ?>
@@ -58,8 +62,12 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                     <?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
                     <?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
                     <?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>edit</button>
-                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="delete">delete</button>
+                    <a data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>
+                        <span class="glyphicon glyphicon-pencil"></span>
+                    </a>
+                    <a onclick="deleteUser(<?= $dataUser->id ?>);">
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </a>
                 </div>
             <?php endforeach ?>
         <?php else: ?>
@@ -69,7 +77,6 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</div>
     </fieldset>
 	<div class="clear"></div>
-    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#memberModal" data-title="add">add</button>
 	<!-- Main information of Ringi -->
 	<div class="header">
 		<div class="colum-item">
