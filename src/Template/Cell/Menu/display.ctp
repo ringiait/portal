@@ -22,21 +22,21 @@
 					if(in_array($pid, array_keys($child))) {
 						$child_i++;
 						echo '<li class="dropdown">';
-							echo '<a href="'.$tmp->links.'?item_menu='.$tmp->id.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">';
+							echo '<a href="'.$tmp->links.''.$tmp->id.'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">';
 								echo ''.$tmp->title.'<span class="caret"></span>';
 							echo '</a>';
 							echo '<ul class="dropdown-menu">';
 							foreach($child[$pid] as $cid) {
 								$c_tmp = $menuArr[$cid];
 								$c_active = ($c_tmp->id == $currMenuItem) ? 'active' : '';
-								echo '<li class=" '.$c_active.'"><a href="'.$c_tmp->links.'&item_menu='.$c_tmp->id.'">'.$c_tmp->title.'</a></li>';
+								echo '<li class=" '.$c_active.'"><a href="'.$c_tmp->links.''.$c_tmp->id.'">'.$c_tmp->title.'</a></li>';
 							}
 							echo ($child_i == count($child[$pid])) ? '' : '<li role="separator" class="divider"></li>';
 							echo '</ul>';
 						echo '</li>';
 					}
 					else{
-						echo  '<li class=" '.$p_active.'"><a href="'.$tmp->links.'?item_menu='.$tmp->id.'">'.$tmp->title.'</a></li>';
+						echo  '<li class=" '.$p_active.'"><a href="'.$tmp->links.''.$tmp->id.'">'.$tmp->title.'</a></li>';
 					}
 				}
 			?>
