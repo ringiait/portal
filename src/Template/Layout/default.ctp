@@ -23,37 +23,21 @@
         <?= $this->fetch('title') ?>
     </title>
     <?= $this->Html->meta('icon') ?>
-
     <?= $this->Html->css('bootstrap.css') ?>
 	<?= $this->Html->css('bootstrap-theme.css') ?>
 	<?= $this->Html->css('style.css') ?>
+	<?= $this->Html->script('jquery.min') ?>
 	<?= $this->Html->script('npm') ?>
-	<?= $this->Html->script('bootstrap') ?>
+	<?= $this->Html->script('bootstrap.min') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-inverse">
-        <div class="container">
-          <div class="navbar-header">
-            <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a href="#" class="navbar-brand">[Ringi Portal]</a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a href="/tasks/add">Add Task</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </nav>
+    <header>        
+	  <?php
+		echo $MenuHtml;
+	  ?>
     </header>
     <div id="container" class="container">
 

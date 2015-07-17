@@ -15,7 +15,8 @@
 namespace App\Controller;
 
 use Cake\Controller\Controller;
-
+use Cake\ORM\TableRegistry;
+use Cake\View\CellTrait;
 /**
  * Application Controller
  *
@@ -40,6 +41,7 @@ class AppController extends Controller
 			'className' => 'Bootstrap3.BootstrapModal'
 		]
 	];
+	use CellTrait;
     /**
      * Initialization hook method.
      *
@@ -50,6 +52,9 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
+	
         $this->loadComponent('Flash');
+		$MenuHtml = $this->cell('Menu');
+		$this->set('MenuHtml', $MenuHtml);
     }
 }
