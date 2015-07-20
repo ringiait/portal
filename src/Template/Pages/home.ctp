@@ -55,7 +55,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
             <?php foreach($users as $key => $dataUser): ?>
                 <div class="colum-item">
                     <h1 class="<?= $dataUser->style ?>" id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
-                    <p><?= __('Chức vụ') . ': <strong id="office' . $dataUser->id . '">' . $listPosition[$dataUser->office_id] . '</strong>' ?></p>
+                    <p><?= __('Chức vụ') . ': <strong id="office' . $dataUser->id . '">' . isset($listPosition[$dataUser->office_id]) ? $listPosition[$dataUser->office_id] : "" . '</strong>' ?></p>
                     <p><?= __('Số ĐT') . ': <strong id="phone' . $dataUser->id . '">' . $dataUser->phone . '</strong>' ?></p>
                     <p><?= __('Email') . ': <strong id="email' . $dataUser->id . '">' .$dataUser->email . '</strong>' ?></p>
                     <p><?= __('Skype') . ': <strong id="skype' . $dataUser->id . '">' . $dataUser->skype . '</strong>' ?></p>
