@@ -46,7 +46,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <fieldset class="fsStyle">
         <legend class="legendStyle">
             <?= __('Member of team') ?>
-            <a href="#" data-toggle="modal" data-target="#memberModal" data-title="add">
+            <a data-toggle="modal" data-target="#memberModal" data-title="add">
                 <span class="glyphicon glyphicon-plus"></span>
             </a>
         </legend>
@@ -54,7 +54,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
         <?php if(is_array($users) && count($users) > 0): ?>
             <?php foreach($users as $key => $dataUser): ?>
                 <div class="colum-item">
-                    <h1 class="<?= $dataUser->style ?>" id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
+                    <h1 class="<?= $dataUser->style ?> hmargin" id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
                     <?php $office_name = isset($listPosition[$dataUser->office_id]) ? $listPosition[$dataUser->office_id] : ""; ?>
                     <p><?= __('Chức vụ') . ': <strong id="office' . $dataUser->id . '">' . $office_name . '</strong>' ?></p>
                     <p><?= __('Số ĐT') . ': <strong id="phone' . $dataUser->id . '">' . $dataUser->phone . '</strong>' ?></p>

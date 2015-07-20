@@ -206,3 +206,12 @@ a:hover{
 .dialog-confirm {
     display: none;
 }
+.hmargin {
+    margin: 0 !important;
+}
+.legendStyle{
+    margin-bottom: 0;
+}
+fieldset a {
+    cursor: pointer;
+}
