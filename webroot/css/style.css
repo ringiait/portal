@@ -160,7 +160,8 @@ a:hover{
 .team-member .colum-item {
   border: 1px solid #cdcdcd;
   float: left;
-  margin-right: 7px;
+  margin-left: 19px;
+  margin-top: 10px;
   min-height: 145px;
   width: 18%;
 }
