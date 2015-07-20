@@ -9,7 +9,7 @@ $(document).ready(function(){
             $("#fullname").val(full_name);
             var email = $("#email" + userId).html();
             $("#email").val(email);
-            var office_id = $("#office" + userId).html();
+            var office_id = $("#office" + userId).val();
             $("#office_id").val(office_id);
             var skype = $("#skype" + userId).html();
             $("#skype").val(skype);

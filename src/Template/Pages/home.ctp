@@ -56,13 +56,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
                 <div class="colum-item">
                     <h1 class="<?= $dataUser->style ?> hmargin" id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
                     <?php $office_name = isset($listPosition[$dataUser->office_id]) ? $listPosition[$dataUser->office_id] : ""; ?>
-                    <p><?= __('Chức vụ') . ': <strong id="office' . $dataUser->id . '">' . $office_name . '</strong>' ?></p>
+                    <p><?= __('Chức vụ') . ': <strong>' . $office_name . '</strong>' ?></p>
                     <p><?= __('Số ĐT') . ': <strong id="phone' . $dataUser->id . '">' . $dataUser->phone . '</strong>' ?></p>
                     <p><?= __('Email') . ': <strong id="email' . $dataUser->id . '">' .$dataUser->email . '</strong>' ?></p>
                     <p><?= __('Skype') . ': <strong id="skype' . $dataUser->id . '">' . $dataUser->skype . '</strong>' ?></p>
                     <?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
                     <?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
                     <?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
+                    <?= $this->Form->input('style', array('id' => 'office' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->office_id)); ?>
                     <a data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>
                         <span class="glyphicon glyphicon-pencil"></span>
                     </a>
