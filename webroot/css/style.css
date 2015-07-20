@@ -187,3 +187,18 @@ a:hover{
 .team-member .colum-item:nth-child(7) > h1 {
   background: none repeat scroll 0 0 #777777;
 }
+.blue {
+    background-color: #2173f0 !important;
+}
+.green {
+    background-color: #009b58 !important;
+}
+.red {
+    background-color: #d84833 !important;
+}
+.yellow {
+    background-color: #ffb508 !important;
+}
+.grey {
+    background-color: #777777 !important;
+}

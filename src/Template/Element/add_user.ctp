@@ -9,12 +9,19 @@
                 <?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask')); ?>
                     <?= $this->Form->input(__('username'), array('label' =>__('Username'),'id' => 'username', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('fullname'), array('label' =>__('Fullname'),'id' => 'fullname', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
-                    <?= $this->Form->input(__('office_id'), array('label' =>__('Position'),'id' => 'office_id', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
+                    <?= $this->Form->input('office_id', array('options' => $listPosition, 'id' => 'office_id', 'label' => __('Position'), 'empty' => __('Position')));?>
                     <?= $this->Form->input(__('email'), array('label' =>__('Email'),'id' => 'email', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('phone'), array('label' =>__('Mobile number'),'id' => 'phone', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('skype'), array('label' =>__('Skype'),'id' => 'skype', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('address'), array('label' =>__('Address'),'id' => 'address', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
-                    <?= $this->Form->input(__('style'), array('label' =>__('Style'),'id' => 'style', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
+                    <label><?= __("Choose color style") ?></label>
+                    <select id="style">
+                    <?php if(!empty($listStyle)): ?>
+                        <?php foreach($listStyle as $kStyle => $vStyle): ?>
+                            <option class="<?= $kStyle ?>"><?= $kStyle ?></option>
+                        <?php endforeach ?>
+                    <?php endif ?>
+                    </select>
                     <?= $this->Form->input('', array('id' => 'userId', 'type' => 'hidden', 'value' => 0)); ?>
                 <?= $this->Form->end(); ?>
             </div>

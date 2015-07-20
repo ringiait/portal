@@ -59,7 +59,10 @@ class PagesController extends AppController
         $this->loadModel('Users');
         $users = $this->Users->find()->toArray();
 
-        $this->set(compact('page', 'subpage', 'users'));
+        $listPosition = Configure::read('listPosition');
+        $listStyle = Configure::read('listStyle');
+
+        $this->set(compact('page', 'subpage', 'users', 'listPosition', 'listStyle'));
 
         try {
             $this->render(implode('/', $path));

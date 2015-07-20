@@ -69,6 +69,13 @@ try {
     die($e->getMessage() . "\n");
 }
 
+try {
+    Configure::config('appConst', new PhpConfig());
+    Configure::load('appConst');
+} catch (\Exception $e) {
+    die($e->getMessage() . "\n");
+}
+
 // Load an environment local configuration file.
 // You can use a file like app_local.php to provide local overrides to your
 // shared configuration.
