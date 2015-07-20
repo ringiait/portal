@@ -33,6 +33,7 @@
 	<?= $this->Html->script('npm') ?>
 	<?= $this->Html->script('bootstrap.min') ?>
     <?= $this->Html->script('user') ?>
+    <?= $this->Html->script('link') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>

@@ -11,6 +11,7 @@
 namespace App\View\Cell;
 
 use Cake\View\Cell;
+use Cake\Core\Configure;
 
 class LinkCell extends Cell
 {
@@ -28,6 +29,8 @@ class LinkCell extends Cell
     {
 		$this->loadModel('Links');
 		$links_list = $this->Links->find()->contain(['LinkType'])->toArray();
+        $targetLink = Configure::read('targetLink');
+        $listStyle = Configure::read('listStyle');
 		
 		$link_arr = array();
 		$link_type_arr = array();
@@ -39,6 +42,8 @@ class LinkCell extends Cell
 		
 		$this->set('link_arr', $link_arr);
 		$this->set('link_type_arr', $link_type_arr);
+        $this->set('targetLink', $targetLink);
+        $this->set('listStyle', $listStyle);
     }
 
 }
