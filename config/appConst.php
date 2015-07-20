@@ -38,4 +38,11 @@ return [
         'green' => 'green',
         'grey' => 'grey',
     ],
+    'targetLink' => [
+        '_blank' => "blank",
+        '_self' => 'self',
+        '_parent' => 'parent',
+        '_top' => 'top',
+        'framename' => 'framename',
+    ],
 ];

@@ -18,11 +18,10 @@ body {
   width: 1198px;
 }
 .colum-item {
-  border: 1px solid #cdcdcd;
-  float: left;
-  margin-right: 7px;
-  min-height: 261px;
-  width: 24%;
+	border: 1px solid #cdcdcd;
+    display: table-cell;
+    float: none;
+    padding: 5px;
 }
 .clearFix{
     clear: both;

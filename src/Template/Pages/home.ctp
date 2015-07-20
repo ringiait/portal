@@ -77,6 +77,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 	</div>
     </fieldset>
 	<div class="clear"></div>
+	<?php echo $linkHtml; ?>
 	<!-- Main information of Ringi -->
 	<div class="header">
 		<div class="colum-item">
