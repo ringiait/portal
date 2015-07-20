@@ -202,3 +202,6 @@ a:hover{
 .grey {
     background-color: #777777 !important;
 }
+.dialog-confirm {
+    display: none;
+}

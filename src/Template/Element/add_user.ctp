@@ -33,6 +33,6 @@
     </div>
 </div>
 
-<div id="dialog-confirm" title="Are you delele?">
+<div id="dialog-confirm" class="dialog-confirm" title="Are you delele?">
     <p><span class="ui-icon ui-icon-alert" style="float:left; margin:0 7px 20px 0;"></span>These user will be permanently deleted. Are you sure?</p>
 </div>
