@@ -6,7 +6,7 @@
                 <h4 class="modal-title"><?= __("Add new user") ?></h4>
             </div>
             <div class="modal-body">
-                <?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask')); ?>
+                <?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask', 'horizontal' => true)); ?>
                     <?= $this->Form->input(__('username'), array('label' =>__('Username'),'id' => 'username', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('fullname'), array('label' =>__('Fullname'),'id' => 'fullname', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input('office_id', array('options' => $listPosition, 'id' => 'office_id', 'label' => __('Position'), 'empty' => __('Position')));?>
@@ -14,14 +14,18 @@
                     <?= $this->Form->input(__('phone'), array('label' =>__('Mobile number'),'id' => 'phone', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('skype'), array('label' =>__('Skype'),'id' => 'skype', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
                     <?= $this->Form->input(__('address'), array('label' =>__('Address'),'id' => 'address', 'type' => 'text', 'value' => '' , 'maxlength' => 20, 'class'=>'inputText')); ?>
-                    <label><?= __("Choose color style") ?></label>
-                    <select id="style">
-                    <?php if(!empty($listStyle)): ?>
-                        <?php foreach($listStyle as $kStyle => $vStyle): ?>
-                            <option class="<?= $kStyle ?>"><?= $kStyle ?></option>
-                        <?php endforeach ?>
-                    <?php endif ?>
-                    </select>
+                    <div class="form-group text">
+                        <label class="col-md-2 control-label"><?= __("Choose color style") ?></label>
+                        <div class="col-md-6">
+                            <select id="style" class="form-control ">
+                                <?php if(!empty($listStyle)): ?>
+                                    <?php foreach($listStyle as $kStyle => $vStyle): ?>
+                                        <option class="<?= $kStyle ?>"><?= $kStyle ?></option>
+                                    <?php endforeach ?>
+                                <?php endif ?>
+                            </select>
+                        </div>
+                    </div>
                     <?= $this->Form->input('', array('id' => 'userId', 'type' => 'hidden', 'value' => 0)); ?>
                 <?= $this->Form->end(); ?>
             </div>
