@@ -47,7 +47,8 @@
     <div id="container" class="container">
 
         <div id="content">
-            <?= $this->Flash->render() ?>
+            <?= $this->Flash->render('success') ?>
+            <?= $this->Flash->render('error') ?>
 
             <div class="row">
                 <?= $this->fetch('content') ?>

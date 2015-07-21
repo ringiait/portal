@@ -22,6 +22,7 @@ return [
         4 => 'Ðang làm',
         5 => 'Rollback lại',
     ],
+<<<<<<< HEAD
 
     'listPosition' => [
         1 => 'Leader',
@@ -45,4 +46,6 @@ return [
         '_top' => 'top',
         'framename' => 'framename',
     ],
+=======
+>>>>>>> bb898e034092e2e28b391d8e1063316f81c09be2
 ];
