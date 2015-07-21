@@ -1,4 +1,3 @@
-<div class="header">
 	<?php
 		$width = round(1280/count($link_type_arr));
 		foreach ($link_type_arr as $lt_id => $lt_title) {
@@ -57,7 +56,6 @@
 			<?php
 		}
 	?>
-</div>
 
 <div id="linkModal" class="modal fade">
     <div class="modal-dialog">

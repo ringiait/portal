@@ -43,15 +43,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		<div class="clear"></div>
 	</div>
 	<!-- Team Member Ringi -->
-    <fieldset class="fsStyle">
-        <legend class="legendStyle">
-            <?= __('Member of team') ?>
-			<span style="float: right;" >
-				<a data-toggle="modal" data-target="#memberModal" data-title="add">
-					<span class="glyphicon glyphicon-plus"></span>
-				</a>
-			</span>
-        </legend>
+    <div class="highlight" style="margin-bottom: 0px !important;">
+		<label for="inputError2" class="control-label"><?= __('Member of team') ?></label>
+		<span style="float: right;" >
+			<a data-toggle="modal" data-target="#memberModal" data-title="add">
+				<span class="glyphicon glyphicon-plus"></span>
+			</a>
+		</span>
+    </div>
 	<div>
         <?php if(is_array($users) && count($users) > 0): ?>
  		<?php
@@ -106,8 +105,19 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 		<div class="clear"></div>
 	</div>
     </fieldset>
+	<br />
 	<div class="clear"></div>
+	<div class="highlight" style="margin-bottom: 0px !important;">
+        <label for="inputError2" class="control-label"><?= __('Documents') ?></label>
+    </div>
 	<?php echo $linkHtml; ?>
+	
+	<div class="clear"></div>
+	<br />
+	<div class="highlight" style="margin-bottom: 0px !important;">
+        <label for="inputError2" class="control-label"><?= __('Task\'s documents') ?></label>
+    </div>    
+	<?php echo $tasksHtml; ?>
 </div>
 
 <?= $this->element('add_user'); ?>

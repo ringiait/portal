@@ -41,6 +41,9 @@ class PagesController extends AppController
 		$linkHtml = $this->cell('Link');
 		$this->set('linkHtml', $linkHtml);
 		
+		$tasksHtml = $this->cell('Tasks');
+		$this->set('tasksHtml', $tasksHtml);
+		
         $path = func_get_args();
 
         $count = count($path);

@@ -26,6 +26,7 @@
     <?= $this->Html->css('bootstrap.css') ?>
 	<?= $this->Html->css('bootstrap-theme.css') ?>
     <?= $this->Html->css('bootstrap-theme.min.css') ?>
+	<?= $this->Html->css('docs.min.css') ?>
 	<?= $this->Html->css('style.css') ?>
     <?= $this->Html->css('jquery-ui.min.css') ?>
 	<?= $this->Html->script('jquery.min') ?>
