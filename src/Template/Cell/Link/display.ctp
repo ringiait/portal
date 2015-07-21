@@ -73,6 +73,7 @@
                 <?= $this->Form->input(__('Target link'), array('options' => $targetLink, 'id' => 'targetLink', 'label' => __('Target link')));?>
                 <label><?= __("Style type") ?></label>
                 <select id="styleTypeLink">
+					<option><?= __('No Color') ?></option>
                     <?php if(!empty($listStyle)): ?>
                         <?php foreach($listStyle as $kStyle => $vStyle): ?>
                             <option class="<?= $kStyle ?>"><?= $kStyle ?></option>

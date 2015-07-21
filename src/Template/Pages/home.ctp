@@ -62,7 +62,7 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 			<div class="colum-item" style="width: <?=$width?>px">
 				<table class="table table-striped" style="margin-bottom: 0px;">
 					<tr class="<?= $dataUser->style ?>">
-						<th colspan="2">
+						<th colspan="2" style="color: #ffffff;">
 							<?= $dataUser->full_name ?>
 							<span style="float: right;" >
 								<a data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>
