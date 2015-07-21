@@ -46,32 +46,60 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
     <fieldset class="fsStyle">
         <legend class="legendStyle">
             <?= __('Member of team') ?>
-            <a data-toggle="modal" data-target="#memberModal" data-title="add">
-                <span class="glyphicon glyphicon-plus"></span>
-            </a>
+			<span style="float: right;" >
+				<a data-toggle="modal" data-target="#memberModal" data-title="add">
+					<span class="glyphicon glyphicon-plus"></span>
+				</a>
+			</span>
         </legend>
-	<div class="team-member">
+	<div>
         <?php if(is_array($users) && count($users) > 0): ?>
-            <?php foreach($users as $key => $dataUser): ?>
-                <div class="colum-item">
-                    <h1 class="<?= $dataUser->style ?> hmargin" id='fullname<?= $dataUser->id ?>'><?= $dataUser->full_name ?> </h1>
-                    <?php $office_name = isset($listPosition[$dataUser->office_id]) ? $listPosition[$dataUser->office_id] : ""; ?>
-                    <p><?= __('Chức vụ') . ': <strong>' . $office_name . '</strong>' ?></p>
-                    <p><?= __('Số ĐT') . ': <strong id="phone' . $dataUser->id . '">' . $dataUser->phone . '</strong>' ?></p>
-                    <p><?= __('Email') . ': <strong id="email' . $dataUser->id . '">' .$dataUser->email . '</strong>' ?></p>
-                    <p><?= __('Skype') . ': <strong id="skype' . $dataUser->id . '">' . $dataUser->skype . '</strong>' ?></p>
-                    <?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
-                    <?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
-                    <?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
-                    <?= $this->Form->input('style', array('id' => 'office' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->office_id)); ?>
-                    <a data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>
-                        <span class="glyphicon glyphicon-pencil"></span>
-                    </a>
-                    <a onclick="deleteUser(<?= $dataUser->id ?>);">
-                        <span class="glyphicon glyphicon-trash"></span>
-                    </a>
-                </div>
-            <?php endforeach ?>
+ 		<?php
+		$width = round(1280/count($users));
+		foreach ($users as $key => $dataUser) {
+			?>
+			<?php $office_name = isset($listPosition[$dataUser->office_id]) ? $listPosition[$dataUser->office_id] : ""; ?>
+			<div class="colum-item" style="width: <?=$width?>px">
+				<table class="table table-striped" style="margin-bottom: 0px;">
+					<tr class="<?= $dataUser->style ?>">
+						<th colspan="2">
+							<?= $dataUser->full_name ?>
+							<span style="float: right;" >
+								<a data-toggle="modal" data-target="#memberModal" data-title="edit" data-member='<?= $dataUser->id ?>'>
+									<span class="glyphicon glyphicon-pencil"></span>
+								</a>
+								<a onclick="deleteUser(<?= $dataUser->id ?>);">
+									<span class="glyphicon glyphicon-trash"></span>
+								</a>
+							</span>
+						</th>
+					</tr>
+					<tr>
+						<td><?= __('Chức vụ') ?></td>
+						<td id='fullname<?= $dataUser->id ?>'><?= $office_name ?></td>
+					</tr>
+					<tr>
+						<td><?= __('Số ĐT') ?></td>
+						<td id="phone<?= $dataUser->id ?>"><?= $dataUser->phone ?></td>
+					</tr>
+					<tr>
+						<td><?= __('Email') ?></td>
+						<td id="email<?= $dataUser->id ?>"><?= $dataUser->email ?></td>
+					</tr>
+					<tr>
+						<td><?= __('Skype') ?></td>
+						<td id="skype<?= $dataUser->id ?>"><?= $dataUser->skype ?></td>
+					</tr>
+				</table>
+				<?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
+				<?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
+				<?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
+				<?= $this->Form->input('style', array('id' => 'office' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->office_id)); ?>
+				
+			</div>	
+			<?php
+		}
+		?>
         <?php else: ?>
             <?= __('Have no user, please add') ?>
         <?php endif ?>
