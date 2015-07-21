@@ -5,6 +5,12 @@ use Cake\ORM\Table;
 
 class TasksTable extends Table
 {
+    
+    public function initialize(array $config)
+    {
+        $this->table('rpt_tasks');
+    }
+    
     /**
      * Function to save task to data base
      * Author	: 	Hoaila
@@ -17,10 +23,10 @@ class TasksTable extends Table
 		$dataSource = $this->getDataSource();	
 		$dataSource->begin();
 		
-		$condition = ($data['id']) ? array('id'=>$data['id']) : array();
+		$condition = ($data['id']) ? array('id'=> $data['id']) : array();
 		
-		$res = $this->updateAll($taskArr, $condition);
-		if ($res) {
+		$result = $this->updateAll($taskArr, $condition);
+		if ($result) {
 			$dataSource->commit();
 			return true;
 		} else {

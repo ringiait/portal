@@ -55,6 +55,6 @@ class AppController extends Controller
 	
         $this->loadComponent('Flash');
 		$MenuHtml = $this->cell('Menu');
-		$this->set('MenuHtml', $MenuHtml);
+		$this->set('MenuHtml', $MenuHtml);	
     }
 }
