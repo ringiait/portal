@@ -187,7 +187,7 @@ a:hover{
 .team-member .colum-item:nth-child(7) > h1 {
   background: none repeat scroll 0 0 #777777;
 }
-<<<<<<< HEAD
+
 .blue {
     background-color: #2173f0 !important;
 }
@@ -215,7 +215,7 @@ a:hover{
 fieldset a {
     cursor: pointer;
 }
-=======
+
 .box_change {
   border: 2px solid #3399ff;
   margin: 20px 0 20px 69px;
@@ -348,4 +348,3 @@ fieldset a {
   padding-top: 7px;
   text-align: left;
 }
->>>>>>> bb898e034092e2e28b391d8e1063316f81c09be2

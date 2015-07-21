@@ -32,11 +32,13 @@ class TasksController extends AppController
     public $name = 'Tasks';
     public $uses = array('Member');
     
-    public function initialize()
+    public function initialize1()
     {
         // Always enable the CSRF component.
         $this->loadComponent('Csrf');
         $this->loadComponent('Flash');
+		$MenuHtml = $this->cell('Menu');
+		$this->set('MenuHtml', $MenuHtml);	
     }
     
 	public $helpers = [
