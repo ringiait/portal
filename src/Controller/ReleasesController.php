@@ -18,6 +18,7 @@ use Cake\Core\Configure;
 use Cake\Network\Exception\NotFoundException;
 use Cake\View\Exception\MissingTemplateException;
 use Cake\ORM\TableRegistry;
+use Cake\I18n\Time;
 /**
  * Static content controller
  *
@@ -27,26 +28,40 @@ use Cake\ORM\TableRegistry;
  */
 class ReleasesController extends AppController
 {
-	public $helpers = [
-		'Form' => [
-			'className' => 'Bootstrap3.BootstrapForm',
-			'useCustomFileInput' => true
-		]
-	];
+    public $helpers = [
+        'Form' => [
+            'className' => 'Bootstrap3.BootstrapForm',
+            'useCustomFileInput' => true
+        ]
+    ];
+
     /**
      * Fucntion to display form to add new task
-     * Author	: 	Hoaila
-	 * Date		: 	15/07/2015
+     * Author    :    Hoaila
+     * Date        :    15/07/2015
      * @return void
-     * 
+     *
      */
-    public function add()
+    public function add($id = 0)
     {
-		//tạo mảng user assigned
-		$arrMembers = array(1 => 'hoaila', 2 => 'thanhn', 3 => 'vannh'); //sau này đổi thành arr member từ db
-		
-		$this->set('title', 'Add New Task Document');
-		$this->set('arrMembers', $arrMembers);
+        if($id != 0){
+            $title = 'Add New Release';
+        } else {
+            $title = 'Edit Release';
+        }
+        $this->loadModel('Tasks');
+        $arrDataRelease = $this->Releases->find()->where(array("id" => $id))->toArray();
+        $arrReleaseTask = $this->Tasks->find()->toArray();
+        $statusRelease = Configure::read('statusRelease');
+        $statusChecklist = Configure::read('statusChecklist');
+        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask'));
+    }
+
+    public function index()
+    {
+        $title = 'List Release';
+        $arrDataRelease = $this->Releases->find()->toArray();
+        $this->set(compact('arrDataRelease'));
     }
 	
 	
@@ -58,33 +73,41 @@ class ReleasesController extends AppController
      * @return redirect back.
      * @throws Exception Database.
      */
-	function saveTask(){ 
-		$Tasks = TableRegistry::get('Tasks');
-		
-		$this->autoRender = false;
-		$data = $this->request['data'];
-		$taskArr = $Tasks->newEntity($this->request->data());
-		
-		//Thêm đoạn validate data vao đây. Tạm thời chưa làm
-		
-		
-		//gan giá trị neu task moi
-		if($id) {
-			$taskArr->created	= date('Y/m/d G:i:s', time());
-			$taskArr->modified = date('Y/m/d G:i:s', time());
-		}
-		
-		//tạo transacion
-		$res = $Tasks->updateAll($taskArr);
-		if ($res) {
-			$this->Flash->set('The task has been saved.', [
-				'element' => 'success'
-			]);
-		} else {
-			$this->Flash->set('The task cannot be saved.', [
-				'element' => 'error'
-			]);
-		}
-		return $this->redirect('/');
+	function saveRelease(){
+        $release = $this->Releases->newEntity();
+        if ($this->request->is('post')) {
+            $this->request->data['release_date'] = new Time($this->request->data['release_date']);
+            $this->request->data['created'] = new Time(Date("Y-m-d H:i:s", time()));
+            $release = $this->Releases->patchEntity($release, $this->request->data);
+            $listTask = $this->request->data['listTask'];
+            $listTask = explode(",", $listTask);
+            $result = $this->Releases->save($release);
+            if ($result->id) {
+                if(! empty($listTask)) {
+                    $arrDataUpdate = array();
+                    $this->loadModel('ReleaseTask');
+                    $oReleaseTask = TableRegistry::get('ReleaseTask');
+                    $oQuery = $oReleaseTask->query();
+                    foreach($listTask as $k => $taskID) {
+                        $oQuery->insert(['redmine_id','release_id','task_id','created'])
+                            ->values(array(
+                                'redmine_id' => $this->request->data['redmine_id'],
+                                'release_id' => $result->id,
+                                'task_id'   => $taskID,
+                                'created'   => date("Y-m-d H:i:s", time())
+                            ));
+                    }
+                    $oQuery->execute();
+                }
+                $this->Flash->set('The task has been saved.', [
+                    'element' => 'success'
+                ]);
+            } else {
+                $this->Flash->set('The task cannot be saved.', [
+                    'element' => 'error'
+                ]);
+            }
+        }
+		return $this->redirect('/releases/index');
 	}
 }
