@@ -64,7 +64,6 @@ class ReleasesController extends AppController
         $this->set(compact('arrDataRelease'));
     }
 	
-	
     /**
      * Function to save task to data base
      * Author	: 	Hoaila
