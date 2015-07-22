@@ -87,13 +87,14 @@ $cakeDescription = 'CakePHP: the rapid development php framework';
 					</tr>
 					<tr>
 						<td><?= __('Skype') ?></td>
-						<td id="skype<?= $dataUser->id ?>"><?= $dataUser->skype ?></td>
+						<td><a href="skype:<?= $dataUser->skype ?>?chat" title="click to chat"><img src="http://www.fancyicons.com/free-icons/119/sleek-xp-software/png/16/skype_16.png" border="0" style="vertical-align:middle"> <?= $dataUser->skype ?></a></td>
 					</tr>
 				</table>
 				<?= $this->Form->input('username', array('id' => 'username' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->tms_username)); ?>
 				<?= $this->Form->input('address', array('id' => 'address' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->address)); ?>
 				<?= $this->Form->input('style', array('id' => 'style' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->style)); ?>
 				<?= $this->Form->input('style', array('id' => 'office' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->office_id)); ?>
+				<?= $this->Form->input('skype', array('id' => 'skype' . $dataUser->id, 'type' => 'hidden', 'value' => $dataUser->skype)); ?>
 				
 			</div>	
 			<?php
