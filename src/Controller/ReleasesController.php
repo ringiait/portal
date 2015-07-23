@@ -140,6 +140,6 @@ class ReleasesController extends AppController
                 ]);
             }
         }
-		return $this->redirect('/releases/index');
+		//return $this->redirect('/releases/index');
 	}
 }
