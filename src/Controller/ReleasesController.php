@@ -130,8 +130,6 @@ class ReleasesController extends AppController
 
                 if (! empty($arrIdDelete)) {
                     $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'redmine_id' => $arrIdDelete]);
-                    $log = $this->ReleaseTask->getDataSource()->getLog(false, false);
-                    debug($log);
                 }
                 $this->Flash->set('The task has been saved.', [
                     'element' => 'success'
