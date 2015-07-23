@@ -44,17 +44,26 @@ class ReleasesController extends AppController
      */
     public function add($id = 0)
     {
-        if($id != 0){
-            $title = 'Add New Release';
-        } else {
-            $title = 'Edit Release';
-        }
         $this->loadModel('Tasks');
+        $this->loadModel('ReleaseTask');
+        $dataReleaseTask = $arrTaskId = array();
+        if ($id != 0) {
+            $title = 'Edit Release';
+            $dataReleaseTask = $this->ReleaseTask->find()->where(array("release_id" => $id))->toArray();
+            if (! empty($dataReleaseTask)) {
+                foreach ($dataReleaseTask as $k => $vReleaseTask) {
+                    $arrTaskId[] = $vReleaseTask->task_id;
+                }
+            }
+        } else {
+            $title = 'Add Release';
+        }
+
         $arrDataRelease = $this->Releases->find()->where(array("id" => $id))->toArray();
         $arrReleaseTask = $this->Tasks->find()->toArray();
         $statusRelease = Configure::read('statusRelease');
         $statusChecklist = Configure::read('statusChecklist');
-        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask'));
+        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask', 'arrTaskId'));
     }
 
     public function index()
@@ -72,7 +81,8 @@ class ReleasesController extends AppController
      * @return redirect back.
      * @throws Exception Database.
      */
-	function saveRelease(){
+	function saveRelease()
+    {
         $release = $this->Releases->newEntity();
         if ($this->request->is('post')) {
             $this->request->data['release_date'] = new Time($this->request->data['release_date']);
@@ -81,13 +91,32 @@ class ReleasesController extends AppController
             $listTask = $this->request->data['listTask'];
             $listTask = explode(",", $listTask);
             $result = $this->Releases->save($release);
+            $oldTaskRealse = explode(",", $this->request->data['oldTaskRelease']);
             if ($result->id) {
-                if(! empty($listTask)) {
+                $this->loadModel('ReleaseTask');
+                $arrIdDelete = $arrIdAdd = array();
+
+                if (! empty($listTask)) {
+                    foreach ($listTask as $k => $vTaskId) {
+                        if(! in_array($vTaskId, $oldTaskRealse)) {
+                            $arrIdAdd[] = $vTaskId;
+                        }
+                    }
+                }
+
+                if (! empty($oldTaskRealse)) {
+                    foreach ($oldTaskRealse as $k => $vTaskOld) {
+                        if(! in_array($vTaskOld, $listTask)) {
+                            $arrIdDelete[] = $vTaskOld;
+                        }
+                    }
+                }
+
+                if (! empty($arrIdAdd)) {
                     $arrDataUpdate = array();
-                    $this->loadModel('ReleaseTask');
                     $oReleaseTask = TableRegistry::get('ReleaseTask');
                     $oQuery = $oReleaseTask->query();
-                    foreach($listTask as $k => $taskID) {
+                    foreach($arrIdAdd as $k => $taskID) {
                         $oQuery->insert(['redmine_id','release_id','task_id','created'])
                             ->values(array(
                                 'redmine_id' => $this->request->data['redmine_id'],
@@ -97,6 +126,12 @@ class ReleasesController extends AppController
                             ));
                     }
                     $oQuery->execute();
+                }
+
+                if (! empty($arrIdDelete)) {
+                    $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'redmine_id' => $arrIdDelete]);
+                    $log = $this->ReleaseTask->getDataSource()->getLog(false, false);
+                    debug($log);
                 }
                 $this->Flash->set('The task has been saved.', [
                     'element' => 'success'
