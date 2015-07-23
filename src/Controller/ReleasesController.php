@@ -129,7 +129,7 @@ class ReleasesController extends AppController
                 }
 
                 if (! empty($arrIdDelete)) {
-                    $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'redmine_id' => $arrIdDelete]);
+                    $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'task_id in' => $arrIdDelete]);
                 }
                 $this->Flash->set('The task has been saved.', [
                     'element' => 'success'
@@ -140,6 +140,6 @@ class ReleasesController extends AppController
                 ]);
             }
         }
-		//return $this->redirect('/releases/index');
+		return $this->redirect('/releases/index');
 	}
 }
