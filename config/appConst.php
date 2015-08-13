@@ -54,4 +54,8 @@ return [
         2 => 'not reviewed',
         3 => 'failed'
     ],
+    'statusProcessRelease' => [
+        1 => "done",
+        2 => 'failed'
+    ],
 ];

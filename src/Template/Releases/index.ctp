@@ -41,7 +41,7 @@
                         <?= $i ?>
                     </td>
                     <td>
-                        <?= $vDataRelease->redmine_id ?>
+                        <?= $this->Html->link($vDataRelease->redmine_id, "/releases/detail/" . $vDataRelease->id, ['class' => 'edit']); ?>
                     </td>
                     <td>
                         <?= date("Y-m-d H:i:s", strtotime($vDataRelease->release_date)) ?>

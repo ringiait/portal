@@ -56,5 +56,8 @@ $this->assign('title', 'Add New Task Document');
         $( "#datepicker" ).datetimepicker({
             dateFormat: 'yy-mm-dd'
         });
+        $("#timeDo").datetimepicker({
+            dateFormat: 'yy-mm-dd'
+        });
     });
 </script>

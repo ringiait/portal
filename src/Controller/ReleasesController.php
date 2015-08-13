@@ -46,6 +46,7 @@ class ReleasesController extends AppController
     {
         $this->loadModel('Tasks');
         $this->loadModel('ReleaseTask');
+        $this->loadModel('Users');
         $dataReleaseTask = $arrTaskId = array();
         if ($id != 0) {
             $title = 'Edit Release';
@@ -59,11 +60,21 @@ class ReleasesController extends AppController
             $title = 'Add Release';
         }
 
+        $arrUser = $this->Users->find()->toArray();
+
+        $arrUserId = array();
+        if (! empty($arrUser)) {
+            foreach ($arrUser as $key => $value) {
+                $arrUserId[$value['id']] = $value['full_name'];
+            }
+        }
+
         $arrDataRelease = $this->Releases->find()->where(array("id" => $id))->toArray();
         $arrReleaseTask = $this->Tasks->find()->toArray();
         $statusRelease = Configure::read('statusRelease');
         $statusChecklist = Configure::read('statusChecklist');
-        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask', 'arrTaskId'));
+        $statusProcessRelease = Configure::read('statusProcessRelease');
+        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask', 'arrTaskId', 'statusProcessRelease', 'arrUserId'));
     }
 
     public function index()
@@ -71,6 +82,26 @@ class ReleasesController extends AppController
         $title = 'List Release';
         $arrDataRelease = $this->Releases->find()->toArray();
         $this->set(compact('arrDataRelease'));
+    }
+
+    public function detail($id)
+    {
+        $this->loadModel('Users');
+        $title = 'Detail Release ' . $id;
+        $arrUser = $this->Users->find()->toArray();
+
+        $arrUserId = array();
+        if (! empty($arrUser)) {
+            foreach ($arrUser as $key => $value) {
+                $arrUserId[$value['id']] = $value['full_name'];
+            }
+        }
+
+        $arrDataRelease = $this->Releases->find()->contain(['ReleaseTask', 'ReleaseProcess'])->where(array("id" => $id))->toArray();
+        $statusRelease = Configure::read('statusRelease');
+        $statusChecklist = Configure::read('statusChecklist');
+        $statusProcessRelease = Configure::read('statusProcessRelease');
+        $this->set(compact('title', 'statusRelease', 'statusChecklist', 'id', 'arrDataRelease', 'arrReleaseTask', 'arrTaskId', 'statusProcessRelease', 'arrUserId'));
     }
 	
     /**
@@ -93,6 +124,7 @@ class ReleasesController extends AppController
             $result = $this->Releases->save($release);
             $oldTaskRealse = explode(",", $this->request->data['oldTaskRelease']);
             if ($result->id) {
+                // Save Release Task
                 $this->loadModel('ReleaseTask');
                 $arrIdDelete = $arrIdAdd = array();
 
@@ -131,6 +163,7 @@ class ReleasesController extends AppController
                 if (! empty($arrIdDelete)) {
                     $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'task_id in' => $arrIdDelete]);
                 }
+
                 $this->Flash->set('The task has been saved.', [
                     'element' => 'success'
                 ]);
@@ -142,4 +175,53 @@ class ReleasesController extends AppController
         }
 		return $this->redirect('/releases/index');
 	}
+
+    /**
+     * Fucntion save release process to database
+     * Author	: 	VanNH
+     * Date		: 	13/08/2015
+     * @return void
+     *
+     */
+    public function saveProcess()
+    {
+        $this->loadModel('ReleaseProcess');
+        $releaseProcess = $this->ReleaseProcess->newEntity();
+        $arrReturn = array();
+        if ($this->request->is('post')) {
+            $this->request->data['time'] = new Time($this->request->data['time']);
+            if (isset($this->request->data['id']) && $this->request->data['id'] == 0) {
+                $this->request->data['created'] = new Time(Date("Y-m-d H:i:s", time()));
+            } else {
+                $this->request->data['modified'] = new Time(Date("Y-m-d H:i:s", time()));
+            }
+            $releaseProcess = $this->ReleaseProcess->patchEntity($releaseProcess, $this->request->data);
+            if ($this->ReleaseProcess->save($releaseProcess)) {
+                $arrReturn = array("status" => true, "msg" => __("The release process has been saved"));
+            } else {
+                $arrReturn = array("status" => false, "msg" => __("The release process could not be saved. Please, try again."));
+            }
+        }
+        echo json_encode($arrReturn); die;
+    }
+
+    /**
+     * Fucntion delete release process from database
+     * Author	: 	VanNH
+     * Date		: 	13/08/2015
+     * @return void
+     *
+     */
+    public function deleteProcess()
+    {
+        $this->loadModel('ReleaseProcess');
+        $id = $this->request->data['id'];
+        $releaseProcess = $this->ReleaseProcess->get($id);
+        if ($this->ReleaseProcess->delete($releaseProcess)) {
+            $arrReturn = array("status" => true, "msg" => __("The release process has been deleted"));
+        } else {
+            $arrReturn = array("status" => false, "msg" => __("The release process could not be deleted. Please, try again."));
+        }
+        echo json_encode($arrReturn); die;
+    }
 }
