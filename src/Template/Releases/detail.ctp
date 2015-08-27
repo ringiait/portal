@@ -82,9 +82,9 @@ $this->assign('title', $title);
                                 $listTask = "";
                                 foreach ($value->release_task as $krlTask => $vrlTask) {
                                     if ($listTask == "") {
-                                        $listTask = $vrlTask->redmine_id;
+                                        $listTask = $vrlTask->task_id;
                                     } else {
-                                        $listTask = $listTask . ", " . $vrlTask->redmine_id;
+                                        $listTask = $listTask . ", " . $vrlTask->task_id;
                                     }
                                 }
                                 echo $listTask;
