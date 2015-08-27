@@ -45,5 +45,18 @@ return [
         '_top' => 'top',
         'framename' => 'framename',
     ],
+    'statusRelease' => [
+        1 => "success",
+        2 => 'failed',
+    ],
+    'statusChecklist' => [
+        1 => "reviewed",
+        2 => 'not reviewed',
+        3 => 'failed'
+    ],
+    'statusProcessRelease' => [
+        1 => "done",
+        2 => 'failed'
+    ],
 ];
 ?>

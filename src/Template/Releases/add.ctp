@@ -26,19 +26,38 @@ $this->assign('title', 'Add New Task Document');
 ?>
 
 <div class="web-register">
-<?php echo $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask', 
+<?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask',
 	'enctype' => "multipart/form-data",
 	'url' => '/releases/saveRelease/', 'horizontal' => true)); ?>
-	<?php echo $this->Form->input('redmine_id', array('label' =>__('Redmine ID'),'id' => 'redmine_id', 'type' => 'text', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>
-	<?php echo $this->Form->input('release_date', array('type' => 'date', 'label'=>__('Release date'), 'id' => 'release_date'));  ?>
-	<?php echo $this->Form->input('change_db', array('label' =>__('Change Database'),'id' => 'changeDB','type' => 'checkbox', 'value' => '0')); ?>
-	<?php echo $this->Form->input('checklist_status', array('label' =>__('Checklist status'),'id' => 'checklistStatus','type' => '', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>
-	<div class="center-input">
-		<?php echo $this->Form->file('doc_file', array('button-label' =>__('Tài liệu đính kèm'),'id' => 'doc_file', 'class' => 'doc_file','style' => 'width:450px; margin: 0 auto;', 'class'=>'inputText')); ?>				 
-	</div>
-	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'),'id' => 'test_case','type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
-	<?php echo $this->Form->submit(__('Lưu'), array('bootstrap-type' => 'danger', 'bootstrap-size' => 'large', 'id' => 'saveButton','name' => 'saveButton')); ?>		
-	<?php echo $this->Form->input('task_id', array('label' => '','id' => 'task_id','type' => 'hidden', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
+    <?php
+        $redmine_id = isset($arrDataRelease[0]['redmine_id']) ? $arrDataRelease[0]['redmine_id'] : "";
+        $release_date = isset($arrDataRelease[0]['release_date']) ? date("Y-m-d H:i:s", strtotime($arrDataRelease[0]['release_date'])) : "";
+        $has_change_db = isset($arrDataRelease[0]['has_change_db']) ? $arrDataRelease[0]['has_change_db'] : "";
+        $db_backup = isset($arrDataRelease[0]['db_backup']) ? $arrDataRelease[0]['db_backup'] : "";
+        $status = isset($arrDataRelease[0]['status']) ? $arrDataRelease[0]['status'] : "";
+        $pass_checklist = isset($arrDataRelease[0]['pass_checklist']) ? $arrDataRelease[0]['pass_checklist'] : "";
+        $id = isset($arrDataRelease[0]['id']) ? $arrDataRelease[0]['id'] : "";
+    ?>
+	<?= $this->Form->input('redmine_id', array('label' =>__('Redmine ID'),'id' => 'redmine_id', 'type' => 'text', 'value' => $redmine_id , 'maxlength' => 255, 'class'=>'inputText')); ?>
+	<?= $this->Form->input('release_date', array('type' => 'text', 'label'=>__('Release date'), 'id' => 'datepicker', 'value' => $release_date));  ?>
+	<?= $this->Form->input('has_change_db', array('label' =>__('Change Database'),'id' => 'changeDB','type' => 'checkbox', 'value' => 1, 'checked' => $has_change_db)); ?>
+    <?= $this->Form->input('db_backup', array('label' =>__('Backup Database'),'id' => 'backupDB','type' => 'checkbox', 'value' => 1, 'checked' => $db_backup)); ?>
+    <?= $this->Form->input('status', array('options' => $statusRelease, 'id' => 'release_status', 'label' => __('Release status'), 'value' => $status));?>
+    <?= $this->Form->input('pass_checklist', array('options' => $statusChecklist, 'id' => 'pass_checklist', 'label' => __('Checklist status'), 'value' => $pass_checklist));?>
+    <?= $this->Form->input('id', array('type' => 'hidden', 'value' => $id)); ?>
+    <?= $this->element('add_task'); ?>
+	<?= $this->Form->submit(__('Lưu'), array('bootstrap-type' => 'danger', 'bootstrap-size' => 'large', 'id' => 'saveButton','name' => 'saveButton')); ?>
 	<!-- Button -->
-<?php echo $this->Form->end(); ?>
+<?= $this->Form->end(); ?>
 </div>
+
+<script>
+    $(function() {
+        $( "#datepicker" ).datetimepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+        $("#timeDo").datetimepicker({
+            dateFormat: 'yy-mm-dd'
+        });
+    });
+</script>

@@ -35,6 +35,7 @@
 	<?= $this->Html->script('bootstrap.min') ?>
     <?= $this->Html->script('user') ?>
     <?= $this->Html->script('link') ?>
+    <?= $this->Html->script('jquery-ui-timepicker-addon.js') ?>
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
