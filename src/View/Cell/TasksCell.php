@@ -26,25 +26,30 @@ class TasksCell extends Cell
  
 	public function display()
     {
-		$this->loadModel('Tasks');
-		$task_list = $this->Tasks->find()->contain(['Users', 'UsersReview','Projects'])->toArray();
+		$this->loadModel('Menus');
+		$currMenuItem = (isset($this->request->query['item_menu'])) ? $this->request->query['item_menu'] : 1;
+		//load all active menus
+		$conditions = array('active' => 1);
+		$fields = array('id','title');
+		$menus_list = $this->Menus->find()->where($conditions)->toArray();
 		
-		$tasks = array() ;
-		
-		if(!empty($task_list)){
-			foreach ($task_list as $tmpTask){
-				$tmp['id'] = $tmpTask->id;
-				$tmp['redmine_id'] = $tmpTask->redmine_id;
-				$tmp['assigned'] = $tmpTask->user->full_name;
-				$tmp['title'] = $tmpTask->title;
-				$tmp['member_review'] = $tmpTask->users_review->full_name;
-				$tmp['project'] = $tmpTask->project->name;
-				$tmp['modified'] = $tmpTask->modified;
-				$tasks[] = $tmp;
+		$parents = array();
+		$child = array();
+		$menuArr = array();
+		//Take process to parents menu array and childs array
+		foreach($menus_list as $menu){
+			if($menu->parent) {
+				$child[$menu->parent][] = $menu->id;
 			}
+			else{
+				if(!in_array($menu->id, $parents)) $parents[] = $menu->id;
+			}
+			$menuArr[$menu->id] = $menu;
 		}
-		
-        $this->set('tasks', $tasks);
+		$this->set('menuArr', $menuArr);
+		$this->set('child', $child);
+		$this->set('parents', $parents);
+		$this->set('currMenuItem', $currMenuItem);
     }
 
 }
