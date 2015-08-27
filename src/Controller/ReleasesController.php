@@ -186,9 +186,9 @@ class ReleasesController extends AppController
     public function saveProcess()
     {
         $this->loadModel('ReleaseProcess');
-        $releaseProcess = $this->ReleaseProcess->newEntity();
         $arrReturn = array();
         if ($this->request->is('post')) {
+            $releaseProcess = $this->ReleaseProcess->newEntity();
             $this->request->data['time'] = new Time($this->request->data['time']);
             if (isset($this->request->data['id']) && $this->request->data['id'] == 0) {
                 $this->request->data['created'] = new Time(Date("Y-m-d H:i:s", time()));
@@ -196,6 +196,8 @@ class ReleasesController extends AppController
                 $this->request->data['modified'] = new Time(Date("Y-m-d H:i:s", time()));
             }
             $releaseProcess = $this->ReleaseProcess->patchEntity($releaseProcess, $this->request->data);
+
+
             if ($this->ReleaseProcess->save($releaseProcess)) {
                 $arrReturn = array("status" => true, "msg" => __("The release process has been saved"));
             } else {
