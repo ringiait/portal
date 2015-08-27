@@ -23,7 +23,7 @@ if (!Configure::read('debug')):
 endif;
 $this->assign('title', 'Add New Task Document');
 ?>
-
+<?= $this->Html->script('taskPortal') ?>
 <div class="web-register">
     <?php echo $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask', 
         	'enctype' => "multipart/form-data",
@@ -34,7 +34,7 @@ $this->assign('title', 'Add New Task Document');
     	<?php echo $this->Form->input('title', array('label' =>__('Tiêu đề task'),'id' => 'title','type' => 'text', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
     	<?php echo $this->Form->input('task_goal', array('label' =>__('Mục đích task'), 'id' => 'task_goal', 'type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 
     	<div class="center-input">
-    		<?php echo $this->Form->file('doc_file', array('button-label' =>__('Tài liệu đính kèm'), 'id' => 'doc_file', 'class' => 'doc_file','style' => 'width:450px; margin: 0 auto;', 'class'=>'inputText')); ?>				 
+    		<input class="btn-default btn-upload" name="fileUpload[]" type="file" multiple="multiple" />			 
     	</div>
     	<?php echo $this->Form->input('test_case', array('label' =>__('Test case'), 'id' => 'test_case', 'type' => 'textarea', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>				 		
     	<?php echo $this->Form->input('task_id', array('label' => '', 'id' => 'task_id', 'type' => 'hidden', 'value' => '' , 'maxlength' => 255, 'class'=>'inputText')); ?>
@@ -45,7 +45,56 @@ $this->assign('title', 'Add New Task Document');
             <?php echo $this->Form->input('function_change', array('label' =>__('Tính năng'), 'id' => 'function_change', 'type' => 'text', 'value' => '', 'maxlength' => 255, 'class'=>'inputText')); ?>
             <?php echo $this->Form->input('function_type', array('options' => $arrFuncType, 'id' => 'function_type', 'label' => __('Loại thay đổi'), 'empty' => 'Loại thay đổi' , 'selected' => ''));?>
             <?php echo $this->Form->input('function_description', array('label' =>__('Mô tả'), 'id' => 'function_description', 'type' => 'textarea', 'value' => '' , 'maxlength' => 1000, 'class'=>'inputText')); ?>
-            <?php echo $this->Form->input('function_note', array('label' =>__('Note'), 'id' => 'function_note', 'type' => 'textarea', 'value' => '' , 'maxlength' => 1000, 'class'=>'inputText')); ?>
+            
+            <!-- List loai thay doi -->
+            <div class="item_function_change">
+                <table>
+                    <tr>
+                        <td>STT</td>
+                        <td>Tính năng</td>
+                        <td>Loại thay đổi</td>
+                        <td>Mô tả</td>
+                        <td>Xóa</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>1</span>
+                        </td>
+                        <td>
+                            <span>Tạo đơn xin dấu</span>
+                            <input type="hidden" name="item_function_change[]" class="function_change_1" value="Tạo đơn xin dấu"/>
+                        </td>
+                        <td>
+                            <span>Edit</span>
+                            <input type="hidden" name="item_function_type[]" class="function_type_1" value="Edit"/>
+                        </td>
+                        <td>
+                            <span>Mô tả</span>
+                            <input type="hidden" name="item_function_description[]" class="function_description_1" value="Mô tả chức năng"/>
+                        </td>
+                        <td><span class="glyphicon glyphicon-trash"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <span>1</span>
+                        </td>
+                        <td>
+                            <span>Tạo đơn xin dấu nguyen thanh hehe nguyễn thành heheh thna nguyễn thành hehe hehe hehe ehehe  hehe e hehe </span>
+                            <input type="hidden" name="item_function_change[]" class="function_change_1" value="Tạo đơn xin dấu"/>
+                        </td>
+                        <td>
+                            <span>Edit</span>
+                            <input type="hidden" name="item_function_type[]" class="function_type_1" value="Edit"/>
+                        </td>
+                        <td>
+                            <span>Mô tả hehe hehe ehe hh ehe hê  heheh ehehe he ehehe e ehehe</span>
+                            <input type="hidden" name="item_function_description[]" class="function_description_1" value="Mô tả chức năng"/>
+                        </td>
+                        <td><span class="glyphicon glyphicon-trash"></span></td>
+                    </tr>
+                </table>
+            </div>
+            
             <input type="button" value="Add" class="add_function_change btn_add"/>
             <div class="clear"></div>
         </div>

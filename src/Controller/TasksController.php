@@ -54,8 +54,7 @@ class TasksController extends AppController
      * @return void
      * 
      */
-    public function add()
-    {
+    public function add(){
         $MemberTable = TableRegistry::get('Member');
         
 		// Get data member from DB   
@@ -100,7 +99,7 @@ class TasksController extends AppController
         
         if ($this->request->is('post')){
             // Get data when submit
-            $data = $this->request->data;
+            $data = $this->request->data;debug($data);die;
             
             // Set data to entity
     		$dataTasks = $tasksTable->newEntity();
@@ -110,13 +109,42 @@ class TasksController extends AppController
             $dataTasks->assigned = (!empty($data['assigned'])) ? $data['assigned'] : 0;
             $dataTasks->title = (!empty($data['title'])) ? $data['title'] : '';
             $dataTasks->task_goal = (!empty($data['task_goal'])) ? $data['task_goal'] : '';            
-            $dataTasks->test_cases = (!empty($data['test_cases'])) ? $data['test_cases'] : '';
+            $dataTasks->test_cases = (!empty($data['test_case'])) ? $data['test_case'] : '';
             $dataTasks->modified = date('Y/m/d G:i:s', time());
             $dataTasks->created = date('Y/m/d G:i:s', time());
             
-            // Lam sau
-            //$dataUpdateTask['doc_file'] = (!empty($data['doc_file'])) ? $data['doc_file'] : '';
-    		
+            $strFileUpload = '';
+            
+            
+            //Loop through each file
+            if(!empty($_FILES['fileUpload'])){
+                $pathFileStore = 'uploadFiles/'.date('Y-m-d').'/'.time();
+                $this->createDirPath($pathFileStore);
+                                
+                for($i=0; $i<count($_FILES['fileUpload']['name']); $i++) {
+                                                            
+                  //Get the temp file path
+                  $tmpFilePath = $_FILES['fileUpload']['tmp_name'][$i];
+                
+                  //Make sure we have a filepath
+                  if ($tmpFilePath != ""){
+                    //Setup our new file path
+                    $newFilePath = $pathFileStore.'/'.$_FILES['fileUpload']['name'][$i];
+                
+                    //Upload the file into the temp dir
+                    if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+                        $strFileUpload .= $newFilePath.',';
+                    }
+                  }
+                }
+                
+                if(!empty($strFileUpload)){
+                    rtrim($strFileUpload, ",");
+                }
+            } 
+            
+            // Set doc_file
+            $dataTasks->doc_file = $strFileUpload;           
             
             // Save to DB
     		$ressult = $tasksTable->save($dataTasks);
@@ -132,5 +160,48 @@ class TasksController extends AppController
             
     		return $this->redirect('/tasks/add');
       }
+	}
+    
+    /**
+     * Function to create directoty path
+     * Author	: 	ThanhN
+	 * Date		: 	21/07/2015
+     *
+     */
+	function createDirPath($path, $from_root = 0){
+		$path_full = ($from_root) ? '/' : '../webroot';
+		$result =array();
+		if($path)
+		{
+
+			$arr_path = explode('/', $path);
+
+			if (!empty($arr_path))
+			{
+				foreach ($arr_path as $val)
+				{
+					if($val)
+					{
+						$path_full .='/'.$val;
+						$this->makeDir($path_full);
+					}
+				}
+			}
+			
+		}
+		return $path_full;
+		
+	}
+    
+    /**
+	 * create forlder
+	 * @author ThanhN
+	 * @create date: 2015/07/21
+	 * @param $string
+	 * @return array
+	 */
+	static public function makeDir($path)
+	{
+		return is_dir($path) || mkdir($path,0777);
 	}
 }

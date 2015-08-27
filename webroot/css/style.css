@@ -348,3 +348,22 @@ fieldset a {
   padding-top: 7px;
   text-align: left;
 }
+.btn-upload{
+    border-radius: 3px;
+    width: 81.5%;
+}
+.item_function_change table {
+  margin: 20px auto;
+  width: 93%;
+}
+.item_function_change tr td {
+  border: 1px solid #cdcdcd;
+  padding: 3px;
+}
+.item_function_change table tbody tr:first-child {
+  background: #f0f0f0 none repeat scroll 0 0;
+}
+.item_function_change table tbody tr:first-child td {
+  font-weight: bold;
+  text-align: center;
+}
