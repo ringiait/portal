@@ -80,8 +80,16 @@ class ReleasesController extends AppController
     public function index()
     {
         $title = 'List Release';
-        $arrDataRelease = $this->Releases->find()->toArray();
-        $this->set(compact('arrDataRelease'));
+        //$arrDataRelease = $this->Releases->find()->order(['created' => 'DESC'])->toArray();
+        $this->paginate = [
+            // Other keys here.
+            'maxLimit' => 10
+        ];
+        $arrDataRelease = $this->paginate($this->Releases->find()->order(['created' => 'DESC']));
+        $statusRelease = Configure::read('statusRelease');
+        $statusChecklist = Configure::read('statusChecklist');
+        $statusProcessRelease = Configure::read('statusProcessRelease');
+        $this->set(compact('arrDataRelease', 'statusRelease', 'statusChecklist', 'statusProcessRelease'));
     }
 
     public function detail($id)
@@ -105,8 +113,8 @@ class ReleasesController extends AppController
     }
 	
     /**
-     * Function to save task to data base
-     * Author	: 	Hoaila
+     * Function to save release to data base
+     * Author	: 	VanNH
 	 * Date		: 	15/07/2015
      *
      * @return redirect back.
@@ -116,9 +124,21 @@ class ReleasesController extends AppController
     {
         $release = $this->Releases->newEntity();
         if ($this->request->is('post')) {
-            $this->request->data['release_date'] = new Time($this->request->data['release_date']);
-            $this->request->data['created'] = new Time(Date("Y-m-d H:i:s", time()));
-            $release = $this->Releases->patchEntity($release, $this->request->data);
+            $this->request->data['release_date'] = (isset($this->request->data['release_date']) && $this->request->data['release_date'] != '') ? new Time($this->request->data['release_date']) : "";
+            if (isset($this->request->data['id']) && $this->request->data['id'] != '') {
+                $urlError = '/releases/add/' . $this->request->data['id'] . '?item_menu=6';
+                $this->request->data['modified'] = new Time(Date("Y-m-d H:i:s", time()));
+            } else {
+                $urlError = '/releases/add?item_menu=6';
+                $this->request->data['created'] = new Time(Date("Y-m-d H:i:s", time()));
+            }
+            $release = $this->Releases->patchEntity($release, $this->request->data, ['validate' => 'update']);
+            if ($release->errors()) {
+                $this->Flash->error($release->errors(), [
+                    'key' => 'positive'
+                ]);
+                return $this->redirect($urlError);
+            }
             $listTask = $this->request->data['listTask'];
             $listTask = explode(",", $listTask);
             $result = $this->Releases->save($release);
@@ -164,17 +184,41 @@ class ReleasesController extends AppController
                     $this->ReleaseTask->deleteAll(['release_id' => $this->request->data['id'], 'task_id in' => $arrIdDelete]);
                 }
 
-                $this->Flash->set('The task has been saved.', [
-                    'element' => 'success'
+                $this->Flash->success('The release has been saved.', [
+                    'key' => 'positive'
                 ]);
             } else {
-                $this->Flash->set('The task cannot be saved.', [
-                    'element' => 'error'
+                $this->Flash->error('The release cannot be saved.', [
+                    'key' => 'positive'
                 ]);
             }
         }
 		return $this->redirect('/releases/index');
 	}
+
+    /**
+     * Fucntion delete release process from database
+     * Author	: 	VanNH
+     * Date		: 	13/08/2015
+     * @return void
+     *
+     */
+    public function deleteRelease($id)
+    {
+        $this->loadModel('Releases');
+        $release = $this->Releases->get($id);
+        if ($this->Releases->delete($release)) {
+            $this->Flash->success('The release has been deleted', [
+                'key' => 'positive'
+            ]);
+            $arrReturn = array("status" => true, "msg" => __("The release has been deleted"));
+        } else {
+            $this->Flash->error('The release could not be deleted. Please, try again.', [
+                'key' => 'positive'
+            ]);
+        }
+        return $this->redirect('/releases/index');
+    }
 
     /**
      * Fucntion save release process to database

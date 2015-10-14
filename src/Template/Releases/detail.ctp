@@ -24,7 +24,7 @@ if (!Configure::read('debug')):
 endif;
 $this->assign('title', $title);
 ?>
-
+<?= $this->element('title_page', array('title_page' => __('Detail Release'))) ?>
 <?php if (! empty($arrDataRelease)): ?>
     <?php foreach ($arrDataRelease as $key => $value): ?>
         <fieldset>
@@ -52,7 +52,13 @@ $this->assign('title', $title);
                 </tr>
                 <tr>
                     <td><?= __('Has Change Databse') ?></td>
-                    <td><?= $value->has_change_db ?></td>
+                    <td>
+                        <?php if ( $value->has_change_db == 1): ?>
+                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
+                        <?php else: ?>
+                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
+                        <?php endif ?>
+                    </td>
                 </tr>
                 <tr>
                     <td><?= __('Pass Checklist') ?></td>
@@ -60,7 +66,13 @@ $this->assign('title', $title);
                 </tr>
                 <tr>
                     <td><?= __('Database Backup') ?></td>
-                    <td><?= $value->db_backup ?></td>
+                    <td>
+                        <?php if ( $value->db_backup == 1): ?>
+                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
+                        <?php else: ?>
+                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
+                        <?php endif ?>
+                    </td>
                 </tr>
                 <tr>
                     <td><?= __('Status') ?></td>
@@ -107,7 +119,7 @@ $this->assign('title', $title);
                 <table width="100%">
                     <tr>
                         <td>#</td>
-                        <td><?= __("Todo") ?></td>
+                        <td width="10%"><?= __("Todo") ?></td>
                         <td><?= __("Time") ?></td>
                         <td><?= __("Member Do") ?></td>
                         <td><?= __("Member Review") ?></td>

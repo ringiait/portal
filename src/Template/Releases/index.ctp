@@ -1,34 +1,36 @@
+<?= $this->element('title_page', array('title_page' => __('List Release'))) ?>
+<?= $this->Flash->render('positive') ?>
 <div class="header">
-    <div class="colum-item">
-        <table class="table table-striped" style="margin-bottom: 0px;">
+    <div class="">
+        <table class="table table-striped" style="margin-bottom: 0px;" width="100%">
             <tr class="danger">
-                <th>#</th>
-                <th width="70%">
+                <th width="3%">#</th>
+                <th width="10%">
                     <?= __('Redmine Id') ?>
                 </th>
-                <th width="70%">
+                <th width="10%">
                     <?= __('Release Date') ?>
                 </th>
-                <th width="70%">
+                <th width="10%">
                     <?= __('Change DB') ?>
                 </th>
-                <th width="70%">
-                    <?= __('Pass Checklist') ?>
-                </th>
-                <th width="70%">
+                <th width="10%">
                     <?= __('Backup DB') ?>
                 </th>
-                <th width="70%">
+                <th width="10%">
+                    <?= __('Pass Checklist') ?>
+                </th>
+                <th width="10%">
                     <?= __('Status') ?>
                 </th>
-                <th width="70%">
+                <th width="10%">
                     <?= __('Created Date') ?>
                 </th>
-                <th width="70%">
+                <th width="10%">
                     <?= __('Modified Date') ?>
                 </th>
-                <th align="left">
-                    <a data-toggle="modal" data-target="#linkModal" data-title="add" data-member='' data-type="">
+                <th align="left" width="4%">
+                    <a href="/releases/add?item_menu=6" >
                         <span class="glyphicon glyphicon-plus"></span>
                     </a>
                 </th>
@@ -47,16 +49,24 @@
                         <?= date("Y-m-d H:i:s", strtotime($vDataRelease->release_date)) ?>
                     </td>
                     <td>
-                        <?= $vDataRelease->has_change_db ?>
+                        <?php if ( $vDataRelease->has_change_db == 1): ?>
+                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
+                        <?php else: ?>
+                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
+                        <?php endif ?>
                     </td>
                     <td>
-                        <?= $vDataRelease->pass_checklist ?>
+                        <?php if ( $vDataRelease->db_backup == 1): ?>
+                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
+                        <?php else: ?>
+                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
+                        <?php endif ?>
                     </td>
                     <td>
-                        <?= $vDataRelease->db_backup ?>
+                        <?= $statusChecklist[$vDataRelease->pass_checklist] ?>
                     </td>
                     <td>
-                        <?= $vDataRelease->status ?>
+                        <?= isset($statusRelease[$vDataRelease->status]) ? $statusRelease[$vDataRelease->status] : "" ?>
                     </td>
                     <td>
                         <?= $vDataRelease->created ?>
@@ -68,7 +78,7 @@
                         <a href="/releases/add/<?= $vDataRelease->id ?>">
                             <span class="glyphicon glyphicon-pencil"></span>
                         </a>
-                        <a href="/releases/edit/<?= $vDataRelease->id ?>">
+                        <a href="/releases/deleteRelease/<?= $vDataRelease->id ?>">
                             <span class="glyphicon glyphicon-trash"></span>
                         </a>
                     </td>
@@ -81,3 +91,8 @@
 
     </div>
 </div>
+<ul class="pager">
+    <?= $this->Paginator->prev('« Previous') ?>
+    <?= $this->Paginator->numbers() ?>
+    <?= $this->Paginator->next('Next »') ?>
+</ul>

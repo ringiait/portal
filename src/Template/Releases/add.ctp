@@ -22,10 +22,11 @@ use Cake\Network\Exception\NotFoundException;
 if (!Configure::read('debug')):
     throw new NotFoundException();
 endif;
-$this->assign('title', 'Add New Task Document');
+$this->assign('title', 'Add New Release Document');
 ?>
-
-<div class="web-register">
+<?= $this->element('title_page', array('title_page' => __('Add New Release'))) ?>
+<div class="web-release">
+<?= $this->Flash->render('positive') ?>
 <?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask',
 	'enctype' => "multipart/form-data",
 	'url' => '/releases/saveRelease/', 'horizontal' => true)); ?>
@@ -38,8 +39,8 @@ $this->assign('title', 'Add New Task Document');
         $pass_checklist = isset($arrDataRelease[0]['pass_checklist']) ? $arrDataRelease[0]['pass_checklist'] : "";
         $id = isset($arrDataRelease[0]['id']) ? $arrDataRelease[0]['id'] : "";
     ?>
-	<?= $this->Form->input('redmine_id', array('label' =>__('Redmine ID'),'id' => 'redmine_id', 'type' => 'text', 'value' => $redmine_id , 'maxlength' => 255, 'class'=>'inputText')); ?>
-	<?= $this->Form->input('release_date', array('type' => 'text', 'label'=>__('Release date'), 'id' => 'datepicker', 'value' => $release_date));  ?>
+	<?= $this->Form->input('redmine_id', array('label' =>__('Redmine ID') . '(*)','id' => 'redmine_id', 'type' => 'text', 'value' => $redmine_id , 'maxlength' => 255, 'class'=>'inputText', 'required')); ?>
+	<?= $this->Form->input('release_date', array('type' => 'text', 'label'=>__('Release date') . '(*)', 'id' => 'datepicker', 'value' => $release_date, 'required'));  ?>
 	<?= $this->Form->input('has_change_db', array('label' =>__('Change Database'),'id' => 'changeDB','type' => 'checkbox', 'value' => 1, 'checked' => $has_change_db)); ?>
     <?= $this->Form->input('db_backup', array('label' =>__('Backup Database'),'id' => 'backupDB','type' => 'checkbox', 'value' => 1, 'checked' => $db_backup)); ?>
     <?= $this->Form->input('status', array('options' => $statusRelease, 'id' => 'release_status', 'label' => __('Release status'), 'value' => $status));?>
@@ -59,5 +60,7 @@ $this->assign('title', 'Add New Task Document');
         $("#timeDo").datetimepicker({
             dateFormat: 'yy-mm-dd'
         });
+        $(this).removeClass("selectit");
+        $(this).addClass("btn-primary");
     });
 </script>

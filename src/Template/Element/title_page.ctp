@@ -1,0 +1,1 @@
+<div class="page-header"><h2><?= $title_page ?></h2></div>
