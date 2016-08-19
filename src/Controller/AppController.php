@@ -52,9 +52,9 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
-	
+		date_default_timezone_set('Asia/Ho_Chi_Minh');		
         $this->loadComponent('Flash');
 		$MenuHtml = $this->cell('Menu');
-		$this->set('MenuHtml', $MenuHtml);	
+			$this->set('MenuHtml', $MenuHtml);	
     }
 }

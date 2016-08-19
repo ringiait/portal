@@ -1,98 +1,55 @@
-<?= $this->element('title_page', array('title_page' => __('List Release'))) ?>
-<?= $this->Flash->render('positive') ?>
-<div class="header">
-    <div class="">
-        <table class="table table-striped" style="margin-bottom: 0px;" width="100%">
-            <tr class="danger">
-                <th width="3%">#</th>
-                <th width="10%">
-                    <?= __('Redmine Id') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Release Date') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Change DB') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Backup DB') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Pass Checklist') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Status') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Created Date') ?>
-                </th>
-                <th width="10%">
-                    <?= __('Modified Date') ?>
-                </th>
-                <th align="left" width="4%">
-                    <a href="/releases/add?item_menu=6" >
-                        <span class="glyphicon glyphicon-plus"></span>
-                    </a>
-                </th>
-            </tr>
-            <?php if(!empty($arrDataRelease)): ?>
-            <?php $i = 1 ?>
-            <?php foreach($arrDataRelease as $kDataRelease => $vDataRelease): ?>
-                <tr>
-                    <td>
-                        <?= $i ?>
-                    </td>
-                    <td>
-                        <?= $this->Html->link($vDataRelease->redmine_id, "/releases/detail/" . $vDataRelease->id, ['class' => 'edit']); ?>
-                    </td>
-                    <td>
-                        <?= date("Y-m-d H:i:s", strtotime($vDataRelease->release_date)) ?>
-                    </td>
-                    <td>
-                        <?php if ( $vDataRelease->has_change_db == 1): ?>
-                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
-                        <?php else: ?>
-                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
-                        <?php endif ?>
-                    </td>
-                    <td>
-                        <?php if ( $vDataRelease->db_backup == 1): ?>
-                            <button class="btn btn-success" type="button"><?= __('yes') ?></button>
-                        <?php else: ?>
-                            <button class="btn btn-danger" type="button"><?= __('no') ?></button>
-                        <?php endif ?>
-                    </td>
-                    <td>
-                        <?= $statusChecklist[$vDataRelease->pass_checklist] ?>
-                    </td>
-                    <td>
-                        <?= isset($statusRelease[$vDataRelease->status]) ? $statusRelease[$vDataRelease->status] : "" ?>
-                    </td>
-                    <td>
-                        <?= $vDataRelease->created ?>
-                    </td>
-                    <td>
-                        <?= $vDataRelease->modified ?>
-                    </td>
-                    <td>
-                        <a href="/releases/add/<?= $vDataRelease->id ?>">
-                            <span class="glyphicon glyphicon-pencil"></span>
-                        </a>
-                        <a href="/releases/deleteRelease/<?= $vDataRelease->id ?>">
-                            <span class="glyphicon glyphicon-trash"></span>
-                        </a>
-                    </td>
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#info" aria-controls="info" role="tab" data-toggle="tab">Information</a></li>
+</ul>
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="info">
+        <table id = "users" class="table table-hover table-bordered ui-widget ui-widget-content">
+            <thead>
+                <tr class = "first ui-widget-header">
+                    <td><?= $this->Paginator->sort('Redmine_ID');?></td>
+                    <td><?= $this->Paginator->sort('release_date');?></td>
+                    <td><?= $this->Paginator->sort('user_release');?></td>
+                    <td><?= $this->Paginator->sort('title_release');?></td>
+                    <td><span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span></td>
                 </tr>
-                <?php $i++ ?>
-            <?php endforeach ?>
-            <?php endif ?>
-
+            </thead>
+            <tbody>
+            <?php foreach($ele_release as $data){ ?> <!-- show data !-->
+                <tr>
+                    <td id="redmine_id<?= $data['id']; ?>"><?= $data['redmine_id']; ?></td>
+                    <td id="release_date<?= $data['id']; ?>"><?= $data['release_date']; ?></td>
+                    <td><?=$data['user_release']; ?></td>
+                    <td style= "word-break: break-all;"><?= mb_substr($data['title_release'],0,10); ?>
+                        <input type = "hidden" id="title_release<?= $data['id']; ?>" value="<?= $data['title_release']; ?>" />
+                    </td>
+                    <td>
+                    <?= $this->Html->link((''),['action'=>'details',$data['id']],array('class' => 'glyphicon glyphicon-list-alt')); ?>
+                    <div style = " margin-left: 15px; margin-right:15px; ; cursor:pointer;" class="glyphicon glyphicon-trash" onclick="deleteRelease(<?= $data['id']; ?>);">    
+                    </div>
+                    <div style = "cursor:pointer;" onclick="editRelease(<?= $data['id']; ?>)" class="glyphicon glyphicon-wrench"> 
+                    </div>
+                    </td>
+                     <input type = "hidden" id="user_release<?= $data['id']; ?>" value="<?= $data['user_release']; ?>" />
+                        <div style = "display:none;">
+                         <input type = "hidden" id="inlineCheckbox1<?= $data['id']; ?>" value="<?= (int)$data['has_change_db']; ?>" />
+                         <input type = "hidden" id="inlineCheckbox2<?= $data['id']; ?>" value="<?= (int)$data['db_backup']; ?>" />
+                    <input type = "hidden" id="status<?= $data['id']; ?>" value="<?= $data['status']; ?>" /></div>
+                </tr>
+            <?php } ?>
+            </tbody>
         </table>
-
+        <div class="paginator" >
+            <ul class="pagination">
+                <?= $this->Paginator->prev('< ' . __('previous')) ?>
+                <?= $this->Paginator->numbers() ?>
+                <?= $this->Paginator->next(__('next') . ' >') ?>
+            </ul>
+            <p><?= $this->Paginator->counter() ?></p>
+        </div>
+        <button id="create-user" class = "btn btn-success">Create New Release</button>
+        <?= $this->element('addRelease'); ?>
     </div>
 </div>
-<ul class="pager">
-    <?= $this->Paginator->prev('« Previous') ?>
-    <?= $this->Paginator->numbers() ?>
-    <?= $this->Paginator->next('Next »') ?>
-</ul>
+<div style=" display: none;" id="dialog-confirm-deleteRelease" class="dialog-confirm-deleteRelease" title="Are you delete?">
+<p><span class="ui-icon ui-icon-trash" style=" float:left; margin:0 7px 20px 0;"></span>Your Release Note will be deleted. Are you sure?</p>
+</div>

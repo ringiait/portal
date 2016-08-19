@@ -1,6 +1,6 @@
 <div class="header">
 	<?php
-		$width = round(1280/count($link_type_arr));
+		
 		foreach ($link_type_arr as $lt_id => $lt_title) {
 			?>
 			<div class="colum-item" style="width: <?=$width?>px">
@@ -68,8 +68,8 @@
             </div>
             <div class="modal-body">
                 <?= $this->Form->create(null, array('id' => 'frmCreateTask', 'name' => 'frmCreateTask')); ?>
-                <?= $this->Form->input(__('Title link'), array('label' =>__('Title link'),'id' => 'titleLink', 'type' => 'text', 'value' => '' , 'maxlength' => 250, 'class'=>'inputText')); ?>
-                <?= $this->Form->input(__('Link'), array('label' =>__('Link'),'id' => 'linkLink', 'type' => 'text', 'value' => '' , 'maxlength' => 250, 'class'=>'inputText')); ?>
+                <?= $this->Form->input(__('Title link'), array('label' =>__('Title link'),'id' => 'titleLink', 'type' => 'text', 'value' => '' , 'maxlength' => 250, 'class'=>'')); ?>
+                <?= $this->Form->input(__('Link'), array('label' =>__('Link'),'id' => 'linkLink', 'type' => 'text', 'value' => '' , 'maxlength' => 250, 'class'=>'')); ?>
                 <?= $this->Form->input(__('Target link'), array('options' => $targetLink, 'id' => 'targetLink', 'label' => __('Target link')));?>
                 <label><?= __("Style type") ?></label>
                 <select id="styleTypeLink">
